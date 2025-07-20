@@ -2,12 +2,10 @@ import Link from "next/link";
 import React from "react";
 import Particles from "./components/particles";
 
-import { Sora } from "next/font/google";
-
-const sora = Sora({
-  subsets: ["latin"],
-  weight: ["700"],
-});
+// Using local font instead of Google Fonts to avoid build issues
+const sora = {
+  className: "font-display"
+};
 
 const navigation = [
   { name: "Projects", href: "/projects" },
