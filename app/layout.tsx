@@ -6,19 +6,19 @@ import { Analytics } from "./components/analytics";
 
 export const metadata: Metadata = {
   title: {
-    default: "Omji Shukla - Portfolio",
-    template: "%s | Omji Shukla",
+    default: "chronark.com",
+    template: "%s | chronark.com",
   },
-  description: "Software engineer building robust and scalable market-making systems at Pi42",
+  description: "Co-founder of unkey.dev and founder of planetfall.io",
   openGraph: {
-    title: "Omji Shukla - Portfolio",
+    title: "chronark.com",
     description:
-      "Software engineer building robust and scalable market-making systems at Pi42",
-    url: "https://omjishukla.com",
-    siteName: "Omji Shukla",
+      "Co-founder of unkey.dev and founder of planetfall.io",
+    url: "https://chronark.com",
+    siteName: "chronark.com",
     images: [
       {
-        url: "https://omjishukla.com/og.png",
+        url: "https://chronark.com/og.png",
         width: 1920,
         height: 1080,
       },
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     },
   },
   twitter: {
-    title: "Omji Shukla",
+    title: "Chronark",
     card: "summary_large_image",
   },
   icons: {
