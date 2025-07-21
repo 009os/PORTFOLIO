@@ -48,9 +48,18 @@ export default function Example() {
 		<div className=" bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0">
 			<Navigation />
 			<div className="container flex items-center justify-center min-h-screen px-4 mx-auto">
-				<div className="grid w-full grid-cols-1 gap-8 mx-auto mt-32 sm:mt-0 sm:grid-cols-3 lg:gap-16">
+				<div className="w-full max-w-6xl">
+					<div className="text-center mb-12">
+						<h2 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl mb-6 font-display">
+							Let's Connect
+						</h2>
+						<p className="text-zinc-400 font-sans">
+							Find me on these platforms and let's start a conversation
+						</p>
+					</div>
+					<div className="grid w-full grid-cols-1 gap-8 mx-auto sm:grid-cols-2 lg:grid-cols-3 lg:gap-16">
 					{socials.map((s) => (
-						<Card>
+						<Card key={s.label}>
 							<Link
 								href={s.href}
 								target="_blank"
@@ -74,6 +83,7 @@ export default function Example() {
 							</Link>
 						</Card>
 					))}
+					</div>
 				</div>
 			</div>
 		</div>

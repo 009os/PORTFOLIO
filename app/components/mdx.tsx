@@ -11,7 +11,7 @@ const components = {
 	h1: ({ className, ...props }) => (
 		<h1
 			className={clsx(
-				"mt-2 scroll-m-20 text-4xl font-bold tracking-tight",
+				"mt-2 scroll-m-20 text-4xl font-bold tracking-tight font-display",
 				className,
 			)}
 			{...props}
@@ -20,7 +20,7 @@ const components = {
 	h2: ({ className, ...props }) => (
 		<h2
 			className={clsx(
-				"mt-10 scroll-m-20 border-b border-b-zinc-800 pb-1 text-3xl font-semibold tracking-tight first:mt-0",
+				"mt-10 scroll-m-20 border-b border-b-zinc-800 pb-1 text-3xl font-semibold tracking-tight first:mt-0 font-display",
 				className,
 			)}
 			{...props}
@@ -29,7 +29,7 @@ const components = {
 	h3: ({ className, ...props }) => (
 		<h3
 			className={clsx(
-				"mt-8 scroll-m-20 text-2xl font-semibold tracking-tight",
+				"mt-8 scroll-m-20 text-2xl font-semibold tracking-tight font-display",
 				className,
 			)}
 			{...props}
@@ -38,7 +38,7 @@ const components = {
 	h4: ({ className, ...props }) => (
 		<h4
 			className={clsx(
-				"mt-8 scroll-m-20 text-xl font-semibold tracking-tight",
+				"mt-8 scroll-m-20 text-xl font-semibold tracking-tight font-display",
 				className,
 			)}
 			{...props}
@@ -47,7 +47,7 @@ const components = {
 	h5: ({ className, ...props }) => (
 		<h5
 			className={clsx(
-				"mt-8 scroll-m-20 text-lg font-semibold tracking-tight",
+				"mt-8 scroll-m-20 text-lg font-semibold tracking-tight font-display",
 				className,
 			)}
 			{...props}
@@ -56,7 +56,7 @@ const components = {
 	h6: ({ className, ...props }) => (
 		<h6
 			className={clsx(
-				"mt-8 scroll-m-20 text-base font-semibold tracking-tight",
+				"mt-8 scroll-m-20 text-base font-semibold tracking-tight font-display",
 				className,
 			)}
 			{...props}
@@ -154,7 +154,7 @@ const components = {
 	code: ({ className, ...props }) => (
 		<code
 			className={clsx(
-				"relative rounded border bg-zinc-300 bg-opacity-25 py-[0.2rem] px-[0.3rem] font-mono text-sm text-zinc-600",
+				"relative rounded border bg-zinc-300 bg-opacity-25 py-[0.2rem] px-[0.3rem] font-sans text-sm text-zinc-600",
 				className,
 			)}
 			{...props}
