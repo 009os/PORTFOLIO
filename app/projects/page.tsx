@@ -5,7 +5,7 @@ import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
 import { Article } from "./article";
 import { Redis } from "@upstash/redis";
-import { Eye } from "lucide-react";
+import { Eye, Sparkles } from "lucide-react";
 
 const redis = Redis.fromEnv();
 
@@ -45,15 +45,16 @@ export default async function ProjectsPage() {
           <h2 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl font-display">
             Projects
           </h2>
-                      <p className="mt-4 text-zinc-400 font-sans">
-              A curated collection of professional projects spanning algorithmic trading systems, financial technology platforms, and innovative software solutions.
-            </p>
+          <p className="mt-4 text-zinc-400 font-sans">
+            A curated collection of professional projects spanning algorithmic trading systems, financial technology platforms, and innovative software solutions.
+          </p>
         </div>
         <div className="w-full h-px bg-zinc-800" />
 
         <div className="grid grid-cols-1 gap-8 mx-auto lg:grid-cols-2 ">
-          <Card>
-            <Link href={`/projects/${featured.slug}`}>
+          <div>
+            <Card>
+              <Link href={`/projects/${featured.slug}`}>
               <article className="relative w-full h-full p-4 md:p-8">
                 <div className="flex items-center justify-between gap-2">
                   <div className="text-xs text-zinc-100">
@@ -81,9 +82,10 @@ export default async function ProjectsPage() {
                 >
                   {featured.title}
                 </h2>
-                <p className="mt-4 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-300">
+                <p className="mt-4 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-300 mb-8">
                   {featured.description}
                 </p>
+
                 <div className="absolute bottom-4 md:bottom-8">
                   <p className="hidden text-zinc-200 hover:text-zinc-50 lg:block">
                     Read more <span aria-hidden="true">&rarr;</span>
@@ -92,22 +94,27 @@ export default async function ProjectsPage() {
               </article>
             </Link>
           </Card>
+          </div>
 
           <div className="grid grid-cols-1 gap-4 mx-auto lg:mx-0">
-            {[top2, top3].map((project) => (
-              <Card key={project.slug}>
-                <Article project={project} views={views[project.slug] ?? 0} />
-              </Card>
+            {[top2, top3].map((project, index) => (
+              <div key={project.slug}>
+                <Card>
+                  <Article project={project} views={views[project.slug] ?? 0} />
+                </Card>
+              </div>
             ))}
           </div>
         </div>
         <div className="hidden w-full h-px md:block bg-zinc-800" />
 
         <div className="grid grid-cols-1 gap-4 mx-auto lg:mx-0 md:grid-cols-3 auto-rows-fr">
-          {sorted.map((project) => (
-            <Card key={project.slug} className="h-full w-full">
-              <Article project={project} views={views[project.slug] ?? 0} />
-            </Card>
+          {sorted.map((project, index) => (
+            <div key={project.slug}>
+              <Card className="h-full w-full">
+                <Article project={project} views={views[project.slug] ?? 0} />
+              </Card>
+            </div>
           ))}
         </div>
       </div>

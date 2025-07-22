@@ -1,5 +1,5 @@
 "use client";
-import { Github, Linkedin, Mail, Twitter,Instagram,PenSquare } from "lucide-react";
+import { Github, Linkedin, Mail, Twitter,Instagram,PenSquare, MessageCircle } from "lucide-react";
 import Link from "next/link";
 import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
@@ -50,7 +50,7 @@ export default function Example() {
 			<div className="container flex items-center justify-center min-h-screen px-4 mx-auto">
 				<div className="w-full max-w-6xl">
 					<div className="text-center mb-12">
-						<h2 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl mb-6 font-display">
+						<h2 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl mb-6 font-display animate-fade-in">
 							Let's Connect
 						</h2>
 						<p className="text-zinc-400 font-sans">
@@ -58,8 +58,9 @@ export default function Example() {
 						</p>
 					</div>
 					<div className="grid w-full grid-cols-1 gap-8 mx-auto sm:grid-cols-2 lg:grid-cols-3 lg:gap-16">
-					{socials.map((s) => (
-						<Card key={s.label}>
+					{socials.map((s, index) => (
+						<div key={s.label} className="animate-slide-up" style={{ animationDelay: `${0.2 + index * 0.05}s` }}>
+							<Card>
 							<Link
 								href={s.href}
 								target="_blank"
@@ -82,6 +83,7 @@ export default function Example() {
 								</div>
 							</Link>
 						</Card>
+						</div>
 					))}
 					</div>
 				</div>
