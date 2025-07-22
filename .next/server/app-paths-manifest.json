@@ -1,8 +1,6 @@
 {
-  "/introductions/page": "app/introductions/page.js",
-  "/contact/page": "app/contact/page.js",
-  "/education/page": "app/education/page.js",
   "/page": "app/page.js",
-  "/projects/page": "app/projects/page.js",
-  "/projects/[slug]/page": "app/projects/[slug]/page.js"
+  "/contact/page": "app/contact/page.js",
+  "/introductions/page": "app/introductions/page.js",
+  "/projects/page": "app/projects/page.js"
 }

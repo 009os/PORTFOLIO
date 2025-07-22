@@ -73,7 +73,7 @@ export default function Example() {
 			<Navigation />
 			<div className="container flex items-center justify-center min-h-screen px-4 mx-auto">
 				<div className="w-full max-w-6xl">
-					<div className="text-center mb-16">
+					<div className="text-center mb-12">
 						<h2 className="text-4xl font-bold tracking-tight text-zinc-100 sm:text-5xl mb-6 font-display animate-fade-in">
 							Let's Connect
 						</h2>
@@ -83,23 +83,23 @@ export default function Example() {
 							I'm always excited to connect with fellow developers, entrepreneurs, and tech enthusiasts.
 						</p>
 					</div>
-					<div className="grid w-full grid-cols-1 gap-8 mx-auto sm:grid-cols-2 lg:grid-cols-3 lg:gap-16">
+					<div className="grid w-full grid-cols-1 gap-6 mx-auto sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
 					{socials.map((s, index) => (
 						<div key={s.label} className="animate-slide-up h-full" style={{ animationDelay: `${0.2 + index * 0.05}s` }}>
 							<Card className="h-full">
 							<Link
 								href={s.href}
 								target="_blank"
-								className="p-6 relative flex flex-col items-center gap-4 duration-700 group hover:scale-105 transition-all h-full justify-center"
+								className="p-4 relative flex flex-col items-center gap-3 duration-700 group hover:scale-105 transition-all h-full justify-center"
 								>
-								<div className={`relative z-10 flex items-center justify-center w-16 h-16 text-lg duration-1000 border-2 rounded-full ${s.iconColor} group-hover:text-white bg-gradient-to-br ${s.color} ${s.borderColor} group-hover:border-zinc-200 group-hover:bg-zinc-900 drop-shadow-lg group-hover:drop-shadow-xl transition-all`}>
+								<div className={`relative z-10 flex items-center justify-center w-12 h-12 text-lg duration-1000 border-2 rounded-full ${s.iconColor} group-hover:text-white bg-gradient-to-br ${s.color} ${s.borderColor} group-hover:border-zinc-200 group-hover:bg-zinc-900 drop-shadow-lg group-hover:drop-shadow-xl transition-all`}>
 									{s.icon}
 								</div>
 								<div className="z-10 flex flex-col items-center text-center">
-									<span className="text-lg font-bold duration-150 text-zinc-200 group-hover:text-white font-display">
+									<span className="text-base font-bold duration-150 text-zinc-200 group-hover:text-white font-display">
 										{s.handle}
 									</span>
-									<span className="text-sm font-medium text-center duration-1000 text-zinc-400 group-hover:text-zinc-200 mb-2">
+									<span className="text-xs font-medium text-center duration-1000 text-zinc-400 group-hover:text-zinc-200 mb-1">
 										{s.label}
 									</span>
 									<p className="text-xs text-center text-zinc-500 group-hover:text-zinc-400 leading-relaxed">
