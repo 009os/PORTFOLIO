@@ -20,53 +20,56 @@ export const Navigation: React.FC = () => {
 	return (
 		<header ref={ref}>
 			<div
-				className={`fixed inset-x-0 top-0 z-50 backdrop-blur-sm duration-200 border-b  ${
+				className={`fixed top-8 right-8 z-50 bg-zinc-900/50 backdrop-blur-xl rounded-xl p-3 border border-zinc-700/30 transition-all duration-500 ${
 					isIntersecting
-						? "bg-zinc-900/0 border-transparent"
-						: "bg-zinc-900/300  border-zinc-800 "
+						? "opacity-100"
+						: "opacity-100"
 				}`}
 			>
-				<div className="container flex flex-row-reverse items-center justify-between p-3 mx-auto">
-					<div className="flex justify-between gap-6">
-						<Link
-							href="/"
-							className="text-sm font-semibold duration-500 text-zinc-400 hover:text-zinc-100 hover:scale-110 transition-all transform hover:shadow-lg hover:shadow-zinc-500/20 px-3 py-1 rounded-lg hover:bg-zinc-800/30 backdrop-blur-sm"
-						>
-							Home
-						</Link>
-						<Link
-							href="/introductions"
-							className="text-sm font-semibold duration-500 text-zinc-400 hover:text-zinc-100 hover:scale-110 transition-all transform hover:shadow-lg hover:shadow-zinc-500/20 px-3 py-1 rounded-lg hover:bg-zinc-800/30 backdrop-blur-sm"
-						>
-							About Me
-						</Link>
-						<Link
-							href="/education"
-							className="text-sm font-semibold duration-500 text-zinc-400 hover:text-zinc-100 hover:scale-110 transition-all transform hover:shadow-lg hover:shadow-zinc-500/20 px-3 py-1 rounded-lg hover:bg-zinc-800/30 backdrop-blur-sm"
-						>
-							Education
-						</Link>
-						<Link
-							href="/projects"
-							className="text-sm font-semibold duration-500 text-zinc-400 hover:text-zinc-100 hover:scale-110 transition-all transform hover:shadow-lg hover:shadow-zinc-500/20 px-3 py-1 rounded-lg hover:bg-zinc-800/30 backdrop-blur-sm"
-						>
-							Projects
-						</Link>
-						<Link
-							href="/contact"
-							className="text-sm font-semibold duration-500 text-zinc-400 hover:text-zinc-100 hover:scale-110 transition-all transform hover:shadow-lg hover:shadow-zinc-500/20 px-3 py-1 rounded-lg hover:bg-zinc-800/30 backdrop-blur-sm"
-						>
-							Socials
-						</Link>
-					</div>
-
-					<Link
-						href="/"
-						className="duration-500 text-zinc-300 hover:text-zinc-100 hover:scale-110 transition-all transform hover:shadow-lg hover:shadow-zinc-500/20 p-2 rounded-lg hover:bg-zinc-800/30 backdrop-blur-sm"
-					>
-						<ArrowLeft className="w-6 h-6" />
-					</Link>
-				</div>
+				<nav>
+					<ul className="flex items-center gap-6 font-sans">
+						<li>
+							<Link
+								href="/"
+								className="text-lg font-bold duration-500 text-zinc-400 hover:text-zinc-100 hover:scale-110 transition-all transform hover:shadow-lg hover:shadow-zinc-500/20 px-4 py-2 rounded-lg hover:bg-zinc-800/30"
+							>
+								Home
+							</Link>
+						</li>
+						<li>
+							<Link
+								href="/projects"
+								className="text-lg font-bold duration-500 text-zinc-400 hover:text-zinc-100 hover:scale-110 transition-all transform hover:shadow-lg hover:shadow-zinc-500/20 px-4 py-2 rounded-lg hover:bg-zinc-800/30"
+							>
+								Projects
+							</Link>
+						</li>
+						<li>
+							<Link
+								href="/education"
+								className="text-lg font-bold duration-500 text-zinc-400 hover:text-zinc-100 hover:scale-110 transition-all transform hover:shadow-lg hover:shadow-zinc-500/20 px-4 py-2 rounded-lg hover:bg-zinc-800/30"
+							>
+								Education
+							</Link>
+						</li>
+						<li>
+							<Link
+								href="/introductions"
+								className="text-lg font-bold duration-500 text-zinc-400 hover:text-zinc-100 hover:scale-110 transition-all transform hover:shadow-lg hover:shadow-zinc-500/20 px-4 py-2 rounded-lg hover:bg-zinc-800/30"
+							>
+								About Me
+							</Link>
+						</li>
+						<li>
+							<Link
+								href="/contact"
+								className="text-lg font-bold duration-500 text-zinc-400 hover:text-zinc-100 hover:scale-110 transition-all transform hover:shadow-lg hover:shadow-zinc-500/20 px-4 py-2 rounded-lg hover:bg-zinc-800/30"
+							>
+								Socials
+							</Link>
+						</li>
+					</ul>
+				</nav>
 			</div>
 		</header>
 	);
