@@ -7,8 +7,8 @@ export default function Education() {
 	return (
 		<div className="bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0">
 			<Navigation />
-			<div className="container flex items-center justify-center min-h-screen px-4 mx-auto">
-				<div className="max-w-4xl mx-auto mt-56 sm:mt-20">
+			<div className="px-6 pt-20 mx-auto space-y-8 max-w-4xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-32 pb-16">
+				<div className="max-w-4xl mx-auto">
 					<div className="text-center mb-12">
 						<h1 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl mb-6 font-display animate-fade-in">
 							Education
