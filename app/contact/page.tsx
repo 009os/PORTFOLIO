@@ -71,19 +71,19 @@ export default function Example() {
 	return (
 		<div className=" bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0">
 			<Navigation />
-			<div className="container flex items-center justify-center min-h-screen px-4 mx-auto">
-				<div className="w-full max-w-6xl">
-					<div className="text-center mb-12">
-						<h2 className="text-4xl font-bold tracking-tight text-zinc-100 sm:text-5xl mb-6 font-display animate-fade-in">
-							Let's Connect
-						</h2>
-						<div className="w-24 h-1 bg-gradient-to-r from-zinc-500 to-zinc-300 mx-auto mb-6"></div>
-						<p className="text-lg text-zinc-400 font-sans max-w-2xl mx-auto">
+					<div className="container flex items-center justify-center min-h-screen px-4 mx-auto">
+			<div className="w-full max-w-6xl">
+				<div className="text-center mb-8 md:mb-12 mt-8 md:mt-16">
+					<h2 className="text-2xl md:text-4xl font-bold tracking-tight text-zinc-100 sm:text-5xl mb-4 md:mb-6 font-display animate-fade-in">
+						Let's Connect
+					</h2>
+											<div className="w-24 h-1 bg-gradient-to-r from-zinc-500 to-zinc-300 mx-auto mb-4 md:mb-6"></div>
+					<p className="text-base md:text-lg text-zinc-400 font-sans max-w-2xl mx-auto px-4">
 							Ready to collaborate, discuss opportunities, or just chat about tech? 
 							I'm always excited to connect with fellow developers, entrepreneurs, and tech enthusiasts.
 						</p>
 					</div>
-					<div className="grid w-full grid-cols-1 gap-6 mx-auto sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
+					<div className="grid w-full grid-cols-1 gap-4 md:gap-6 mx-auto sm:grid-cols-2 lg:grid-cols-3 lg:gap-8 px-4">
 					{socials.map((s, index) => (
 						<div key={s.label} className="animate-slide-up h-full" style={{ animationDelay: `${0.2 + index * 0.05}s` }}>
 							<Card className="h-full">
