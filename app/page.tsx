@@ -22,10 +22,10 @@ export default function Home() {
       <nav className="fixed top-4 right-4 md:top-8 md:right-8 animate-fade-in z-50 bg-zinc-900/50 backdrop-blur-xl rounded-xl p-2 md:p-3 border border-zinc-700/30 transition-all duration-500">
         <ul className="flex items-center gap-2 md:gap-6 font-sans">
           <li 
-            className={`transition-all duration-500 ${
-              scrollY > 400 && window.innerWidth >= 768 ? 'opacity-0 -translate-y-4 pointer-events-none hidden' : 'opacity-100 translate-y-0'
-            }`}
-            style={{ display: scrollY > 400 && window.innerWidth >= 768 ? 'none' : 'block' }}
+                    className={`transition-all duration-500 md:block ${
+          scrollY > 400 ? 'opacity-0 -translate-y-4 pointer-events-none hidden' : 'opacity-100 translate-y-0'
+        }`}
+        style={{ display: scrollY > 400 ? 'none' : 'block' }}
           >
             <Link
               href="/introductions"
@@ -35,10 +35,10 @@ export default function Home() {
             </Link>
           </li>
           <li 
-            className={`transition-all duration-500 ${
-              scrollY > 800 && window.innerWidth >= 768 ? 'opacity-0 -translate-y-4 pointer-events-none hidden' : 'opacity-100 translate-y-0'
-            }`}
-            style={{ display: scrollY > 800 && window.innerWidth >= 768 ? 'none' : 'block' }}
+                    className={`transition-all duration-500 md:block ${
+          scrollY > 800 ? 'opacity-0 -translate-y-4 pointer-events-none hidden' : 'opacity-100 translate-y-0'
+        }`}
+        style={{ display: scrollY > 800 ? 'none' : 'block' }}
           >
             <Link
               href="/work-experience"
@@ -48,10 +48,10 @@ export default function Home() {
             </Link>
           </li>
           <li 
-            className={`transition-all duration-500 ${
-              scrollY > 1200 && window.innerWidth >= 768 ? 'opacity-0 -translate-y-4 pointer-events-none hidden' : 'opacity-100 translate-y-0'
-            }`}
-            style={{ display: scrollY > 1200 && window.innerWidth >= 768 ? 'none' : 'block' }}
+                    className={`transition-all duration-500 md:block ${
+          scrollY > 1200 ? 'opacity-0 -translate-y-4 pointer-events-none hidden' : 'opacity-100 translate-y-0'
+        }`}
+        style={{ display: scrollY > 1200 ? 'none' : 'block' }}
           >
             <Link
               href="/projects"
@@ -61,10 +61,10 @@ export default function Home() {
             </Link>
           </li>
           <li 
-            className={`transition-all duration-500 ${
-              scrollY > 1600 && window.innerWidth >= 768 ? 'opacity-0 -translate-y-4 pointer-events-none hidden' : 'opacity-100 translate-y-0'
-            }`}
-            style={{ display: scrollY > 1600 && window.innerWidth >= 768 ? 'none' : 'block' }}
+                    className={`transition-all duration-500 md:block ${
+          scrollY > 1600 ? 'opacity-0 -translate-y-4 pointer-events-none hidden' : 'opacity-100 translate-y-0'
+        }`}
+        style={{ display: scrollY > 1600 ? 'none' : 'block' }}
           >
             <Link
               href="/education"
@@ -126,7 +126,7 @@ export default function Home() {
       {/* About Me Preview */}
       <div 
         className={`w-full max-w-6xl mx-auto px-4 md:px-8 mt-16 md:mt-32 transition-all duration-1000 ${
-          scrollY > 100 || window.innerWidth < 768 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+          scrollY > 100 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
         }`}
       >
         <div className="text-center mb-8 md:mb-12">
@@ -189,7 +189,7 @@ export default function Home() {
       {/* Work Experience Preview */}
       <div 
         className={`w-full max-w-6xl mx-auto px-4 md:px-8 mt-16 md:mt-32 transition-all duration-1000 ${
-          scrollY > 300 || window.innerWidth < 768 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+          scrollY > 300 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
         }`}
       >
         <div className="text-center mb-8 md:mb-12">
@@ -240,7 +240,7 @@ export default function Home() {
       {/* Projects Preview */}
       <div 
         className={`w-full max-w-6xl mx-auto px-4 md:px-8 mt-16 md:mt-32 transition-all duration-1000 ${
-          scrollY > 500 || window.innerWidth < 768 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+          scrollY > 500 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
         }`}
       >
         <div className="text-center mb-8 md:mb-12">
@@ -304,7 +304,7 @@ export default function Home() {
       {/* Education Preview */}
       <div 
         className={`w-full max-w-6xl mx-auto px-4 md:px-8 mt-16 md:mt-32 transition-all duration-1000 ${
-          scrollY > 700 || window.innerWidth < 768 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+          scrollY > 700 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
         }`}
       >
         <div className="text-center mb-8 md:mb-12">
