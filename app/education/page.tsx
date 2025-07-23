@@ -5,18 +5,17 @@ import { GraduationCap, BookOpen, Award } from "lucide-react";
 export default function Education() {
 
 	return (
-		<div className="bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0">
+		<div className="flex flex-col items-center justify-center w-screen min-h-screen bg-gradient-to-tl from-black via-zinc-600/20 to-black relative">
 			<Navigation />
-			<div className="px-6 pt-20 mx-auto space-y-8 max-w-4xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-32 pb-16">
-				<div className="max-w-4xl mx-auto">
-					<div className="text-center mb-12">
-						<h1 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl mb-6 font-display animate-fade-in">
-							Education
-						</h1>
-						<div className="w-24 h-1 bg-gradient-to-r from-zinc-500 to-zinc-300 mx-auto animate-slide-in"></div>
-					</div>
-					
-					<div className="space-y-8">
+			<div className="w-full max-w-4xl mx-auto px-4 md:px-8 py-16 mt-16">
+				<div className="text-center mb-8 md:mb-12">
+					<h1 className="text-2xl md:text-4xl font-bold tracking-tight text-zinc-100 mb-4 md:mb-6 font-display animate-fade-in">
+						Education
+					</h1>
+					<div className="w-24 h-1 bg-gradient-to-r from-zinc-500 to-zinc-300 mx-auto animate-slide-in"></div>
+				</div>
+				
+				<div className="space-y-6 md:space-y-8">
 						{/* Master's Degree Section */}
 						<div 
 							className="group bg-gradient-to-br from-zinc-900/80 to-zinc-800/40 backdrop-blur-sm border border-zinc-700/50 rounded-xl p-6 hover:border-zinc-600/70 hover:shadow-2xl hover:shadow-zinc-500/10 transition-all duration-500 transform hover:scale-[1.02] animate-slide-up"
@@ -139,7 +138,6 @@ export default function Education() {
 
 						</div>
 					</div>
-				</div>
 			</div>
 		</div>
 	);

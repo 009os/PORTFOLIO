@@ -23,9 +23,9 @@ export default function Home() {
         <ul className="flex items-center gap-2 md:gap-6 font-sans">
           <li 
             className={`transition-all duration-500 ${
-              scrollY > 400 ? 'opacity-0 -translate-y-4 pointer-events-none hidden' : 'opacity-100 translate-y-0'
+              scrollY > 400 && window.innerWidth >= 768 ? 'opacity-0 -translate-y-4 pointer-events-none hidden' : 'opacity-100 translate-y-0'
             }`}
-            style={{ display: scrollY > 400 ? 'none' : 'block' }}
+            style={{ display: scrollY > 400 && window.innerWidth >= 768 ? 'none' : 'block' }}
           >
             <Link
               href="/introductions"
@@ -36,9 +36,9 @@ export default function Home() {
           </li>
           <li 
             className={`transition-all duration-500 ${
-              scrollY > 800 ? 'opacity-0 -translate-y-4 pointer-events-none hidden' : 'opacity-100 translate-y-0'
+              scrollY > 800 && window.innerWidth >= 768 ? 'opacity-0 -translate-y-4 pointer-events-none hidden' : 'opacity-100 translate-y-0'
             }`}
-            style={{ display: scrollY > 800 ? 'none' : 'block' }}
+            style={{ display: scrollY > 800 && window.innerWidth >= 768 ? 'none' : 'block' }}
           >
             <Link
               href="/work-experience"
@@ -49,9 +49,9 @@ export default function Home() {
           </li>
           <li 
             className={`transition-all duration-500 ${
-              scrollY > 1200 ? 'opacity-0 -translate-y-4 pointer-events-none hidden' : 'opacity-100 translate-y-0'
+              scrollY > 1200 && window.innerWidth >= 768 ? 'opacity-0 -translate-y-4 pointer-events-none hidden' : 'opacity-100 translate-y-0'
             }`}
-            style={{ display: scrollY > 1200 ? 'none' : 'block' }}
+            style={{ display: scrollY > 1200 && window.innerWidth >= 768 ? 'none' : 'block' }}
           >
             <Link
               href="/projects"
@@ -62,9 +62,9 @@ export default function Home() {
           </li>
           <li 
             className={`transition-all duration-500 ${
-              scrollY > 1600 ? 'opacity-0 -translate-y-4 pointer-events-none hidden' : 'opacity-100 translate-y-0'
+              scrollY > 1600 && window.innerWidth >= 768 ? 'opacity-0 -translate-y-4 pointer-events-none hidden' : 'opacity-100 translate-y-0'
             }`}
-            style={{ display: scrollY > 1600 ? 'none' : 'block' }}
+            style={{ display: scrollY > 1600 && window.innerWidth >= 768 ? 'none' : 'block' }}
           >
             <Link
               href="/education"
@@ -115,8 +115,8 @@ export default function Home() {
         </h2>
       </div>
 
-      {/* Scroll Indicator */}
-      <div className="flex justify-center mt-12 animate-fade-in" style={{ animationDelay: '0.6s' }}>
+      {/* Scroll Indicator - Desktop Only */}
+      <div className="hidden md:flex justify-center mt-12 animate-fade-in" style={{ animationDelay: '0.6s' }}>
         <div className="flex flex-col items-center text-zinc-400 hover:text-zinc-300 transition-colors duration-300 cursor-pointer group">
           <span className="text-lg font-semibold mb-3 opacity-80 group-hover:opacity-100 transition-opacity">Scroll to explore more</span>
           <ChevronDown className="w-8 h-8 animate-bounce" />
@@ -126,7 +126,7 @@ export default function Home() {
       {/* About Me Preview */}
       <div 
         className={`w-full max-w-6xl mx-auto px-4 md:px-8 mt-16 md:mt-32 transition-all duration-1000 ${
-          scrollY > 100 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+          scrollY > 100 || window.innerWidth < 768 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
         }`}
       >
         <div className="text-center mb-8 md:mb-12">
@@ -189,7 +189,7 @@ export default function Home() {
       {/* Work Experience Preview */}
       <div 
         className={`w-full max-w-6xl mx-auto px-4 md:px-8 mt-16 md:mt-32 transition-all duration-1000 ${
-          scrollY > 300 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+          scrollY > 300 || window.innerWidth < 768 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
         }`}
       >
         <div className="text-center mb-8 md:mb-12">
@@ -240,7 +240,7 @@ export default function Home() {
       {/* Projects Preview */}
       <div 
         className={`w-full max-w-6xl mx-auto px-4 md:px-8 mt-16 md:mt-32 transition-all duration-1000 ${
-          scrollY > 500 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+          scrollY > 500 || window.innerWidth < 768 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
         }`}
       >
         <div className="text-center mb-8 md:mb-12">
@@ -304,7 +304,7 @@ export default function Home() {
       {/* Education Preview */}
       <div 
         className={`w-full max-w-6xl mx-auto px-4 md:px-8 mt-16 md:mt-32 transition-all duration-1000 ${
-          scrollY > 700 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+          scrollY > 700 || window.innerWidth < 768 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
         }`}
       >
         <div className="text-center mb-8 md:mb-12">
