@@ -22,10 +22,10 @@ export default function Home() {
       <nav className="fixed top-4 right-4 md:top-8 md:right-8 animate-fade-in z-50 bg-zinc-900/50 backdrop-blur-xl rounded-xl p-2 md:p-3 border border-zinc-700/30 transition-all duration-500">
         <ul className="flex items-center gap-2 md:gap-6 font-sans">
           <li 
-                    className={`transition-all duration-500 md:block ${
-          scrollY > 400 ? 'opacity-0 -translate-y-4 pointer-events-none hidden' : 'opacity-100 translate-y-0'
-        }`}
-        style={{ display: scrollY > 400 ? 'none' : 'block' }}
+            className={`transition-all duration-500 ${
+              scrollY > 400 ? 'opacity-0 -translate-y-4 pointer-events-none hidden' : 'opacity-100 translate-y-0'
+            }`}
+            style={{ display: scrollY > 400 ? 'none' : 'block' }}
           >
             <Link
               href="/introductions"
@@ -35,10 +35,10 @@ export default function Home() {
             </Link>
           </li>
           <li 
-                    className={`transition-all duration-500 md:block ${
-          scrollY > 800 ? 'opacity-0 -translate-y-4 pointer-events-none hidden' : 'opacity-100 translate-y-0'
-        }`}
-        style={{ display: scrollY > 800 ? 'none' : 'block' }}
+            className={`transition-all duration-500 ${
+              scrollY > 800 ? 'opacity-0 -translate-y-4 pointer-events-none hidden' : 'opacity-100 translate-y-0'
+            }`}
+            style={{ display: scrollY > 800 ? 'none' : 'block' }}
           >
             <Link
               href="/work-experience"
@@ -48,10 +48,10 @@ export default function Home() {
             </Link>
           </li>
           <li 
-                    className={`transition-all duration-500 md:block ${
-          scrollY > 1200 ? 'opacity-0 -translate-y-4 pointer-events-none hidden' : 'opacity-100 translate-y-0'
-        }`}
-        style={{ display: scrollY > 1200 ? 'none' : 'block' }}
+            className={`transition-all duration-500 ${
+              scrollY > 1200 ? 'opacity-0 -translate-y-4 pointer-events-none hidden' : 'opacity-100 translate-y-0'
+            }`}
+            style={{ display: scrollY > 1200 ? 'none' : 'block' }}
           >
             <Link
               href="/projects"
@@ -61,10 +61,10 @@ export default function Home() {
             </Link>
           </li>
           <li 
-                    className={`transition-all duration-500 md:block ${
-          scrollY > 1600 ? 'opacity-0 -translate-y-4 pointer-events-none hidden' : 'opacity-100 translate-y-0'
-        }`}
-        style={{ display: scrollY > 1600 ? 'none' : 'block' }}
+            className={`transition-all duration-500 ${
+              scrollY > 1600 ? 'opacity-0 -translate-y-4 pointer-events-none hidden' : 'opacity-100 translate-y-0'
+            }`}
+            style={{ display: scrollY > 1600 ? 'none' : 'block' }}
           >
             <Link
               href="/education"
@@ -115,8 +115,8 @@ export default function Home() {
         </h2>
       </div>
 
-      {/* Scroll Indicator - Desktop Only */}
-      <div className="hidden md:flex justify-center mt-12 animate-fade-in" style={{ animationDelay: '0.6s' }}>
+      {/* Scroll Indicator */}
+      <div className="flex justify-center mt-12 animate-fade-in" style={{ animationDelay: '0.6s' }}>
         <div className="flex flex-col items-center text-zinc-400 hover:text-zinc-300 transition-colors duration-300 cursor-pointer group">
           <span className="text-lg font-semibold mb-3 opacity-80 group-hover:opacity-100 transition-opacity">Scroll to explore more</span>
           <ChevronDown className="w-8 h-8 animate-bounce" />

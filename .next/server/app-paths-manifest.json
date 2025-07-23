@@ -1,11 +1,5 @@
 {
-  "/not-found": "app/not-found.js",
   "/page": "app/page.js",
-  "/contact/page": "app/contact/page.js",
   "/introductions/page": "app/introductions/page.js",
-  "/work-experience/page": "app/work-experience/page.js",
-  "/education/page": "app/education/page.js",
-  "/projects/page": "app/projects/page.js",
-  "/_not-found": "app/_not-found.js",
-  "/projects/[slug]/page": "app/projects/[slug]/page.js"
+  "/education/page": "app/education/page.js"
 }
