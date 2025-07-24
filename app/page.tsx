@@ -153,7 +153,7 @@ export default function Home() {
               {/* Text Content */}
               <div className="flex-1 text-left">
                 <p className="text-base md:text-lg text-zinc-300 leading-relaxed">
-                  I'm a passionate software engineer specializing in building robust and scalable market-making systems for crypto derivatives exchanges. 
+                  I'm a software engineer specializing in building robust and scalable market-making systems for crypto derivatives exchanges. 
                   With expertise in backend development, algorithmic trading, and high-frequency systems, I love solving complex technical challenges.
                 </p>
               </div>
@@ -161,15 +161,9 @@ export default function Home() {
             
             <div className="flex flex-wrap justify-center gap-3">
               <span className="px-3 py-1 bg-blue-500/20 text-blue-400 rounded-full text-sm border border-blue-500/30">
-                NestJS
+                Backend Development
               </span>
               <span className="px-3 py-1 bg-green-500/20 text-green-400 rounded-full text-sm border border-green-500/30">
-                Prisma ORM
-              </span>
-              <span className="px-3 py-1 bg-purple-500/20 text-purple-400 rounded-full text-sm border border-purple-500/30">
-                PostgreSQL
-              </span>
-              <span className="px-3 py-1 bg-orange-500/20 text-orange-400 rounded-full text-sm border border-orange-500/30">
                 Algorithmic Trading
               </span>
             </div>
@@ -201,30 +195,34 @@ export default function Home() {
       
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 mb-8 max-w-4xl mx-auto">
           {/* Senior Technical Engineer */}
-          <div className="bg-zinc-900/30 backdrop-blur-sm border border-zinc-700/30 rounded-xl p-6 hover:border-zinc-600/50 transition-all duration-300 hover:scale-105">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="p-3 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-lg border border-blue-500/30">
-                <Building2 className="w-6 h-6 text-blue-400" />
+          <Link href="/work-experience" className="block">
+            <div className="bg-zinc-900/30 backdrop-blur-sm border border-zinc-700/30 rounded-xl p-6 hover:border-zinc-600/50 transition-all duration-300 hover:scale-105 cursor-pointer">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="p-3 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-lg border border-blue-500/30">
+                  <Building2 className="w-6 h-6 text-blue-400" />
+                </div>
+                <h4 className="text-lg font-bold text-zinc-100">Senior Technical Engineer</h4>
               </div>
-              <h4 className="text-lg font-bold text-zinc-100">Senior Technical Engineer</h4>
+              <p className="text-base text-zinc-300 mb-2">Pi42 - Crypto Derivatives Exchange</p>
+              <p className="text-sm text-zinc-400 mb-2">May 2025 - Present</p>
+              <p className="text-sm text-zinc-500">Market-making systems</p>
             </div>
-            <p className="text-base text-zinc-300 mb-2">Pi42 - Crypto Derivatives Exchange</p>
-            <p className="text-sm text-zinc-400 mb-2">May 2025 - Present</p>
-            <p className="text-sm text-zinc-500">Market-making systems</p>
-          </div>
+          </Link>
 
           {/* Technical Engineer */}
-          <div className="bg-zinc-900/30 backdrop-blur-sm border border-zinc-700/30 rounded-xl p-6 hover:border-zinc-600/50 transition-all duration-300 hover:scale-105">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="p-3 bg-gradient-to-br from-green-500/20 to-emerald-500/20 rounded-lg border border-green-500/30">
-                <Code className="w-6 h-6 text-green-400" />
+          <Link href="/work-experience" className="block">
+            <div className="bg-zinc-900/30 backdrop-blur-sm border border-zinc-700/30 rounded-xl p-6 hover:border-zinc-600/50 transition-all duration-300 hover:scale-105 cursor-pointer">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="p-3 bg-gradient-to-br from-green-500/20 to-emerald-500/20 rounded-lg border border-green-500/30">
+                  <Code className="w-6 h-6 text-green-400" />
+                </div>
+                <h4 className="text-lg font-bold text-zinc-100">Technical Engineer</h4>
               </div>
-              <h4 className="text-lg font-bold text-zinc-100">Technical Engineer</h4>
+              <p className="text-base text-zinc-300 mb-2">Pi42 - Crypto Derivatives Exchange</p>
+              <p className="text-sm text-zinc-400 mb-2">Jun 2024 - May 2025</p>
+              <p className="text-sm text-zinc-500">Algorithmic trading systems</p>
             </div>
-            <p className="text-base text-zinc-300 mb-2">Pi42 - Crypto Derivatives Exchange</p>
-            <p className="text-sm text-zinc-400 mb-2">Jun 2024 - May 2025</p>
-            <p className="text-sm text-zinc-500">Algorithmic trading systems</p>
-          </div>
+          </Link>
         </div>
 
         <div className="text-center mt-8">
@@ -252,43 +250,49 @@ export default function Home() {
       
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Project 1 */}
-          <div className="bg-zinc-900/30 backdrop-blur-sm border border-zinc-700/30 rounded-xl p-6 hover:border-zinc-600/50 transition-all duration-300 hover:scale-105">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="p-3 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-lg border border-blue-500/30">
-                <div className="w-6 h-6 bg-blue-400 rounded"></div>
+          <Link href="/projects" className="block">
+            <div className="bg-zinc-900/30 backdrop-blur-sm border border-zinc-700/30 rounded-xl p-6 hover:border-zinc-600/50 transition-all duration-300 hover:scale-105 cursor-pointer">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="p-3 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-lg border border-blue-500/30">
+                  <div className="w-6 h-6 bg-blue-400 rounded"></div>
+                </div>
+                <h4 className="text-lg font-bold text-zinc-100">Binance Multi-Leg</h4>
               </div>
-              <h4 className="text-lg font-bold text-zinc-100">Binance Multi-Leg</h4>
+              <p className="text-base text-zinc-300 mb-2">Multi-leg options execution system</p>
+              <p className="text-sm text-zinc-400 mb-2">High-frequency trading</p>
+              <p className="text-sm text-zinc-500">Featured Project</p>
             </div>
-            <p className="text-base text-zinc-300 mb-2">Multi-leg options execution system</p>
-            <p className="text-sm text-zinc-400 mb-2">High-frequency trading</p>
-            <p className="text-sm text-zinc-500">Featured Project</p>
-          </div>
+          </Link>
 
           {/* Project 2 */}
-          <div className="bg-zinc-900/30 backdrop-blur-sm border border-zinc-700/30 rounded-xl p-6 hover:border-zinc-600/50 transition-all duration-300 hover:scale-105">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="p-3 bg-gradient-to-br from-green-500/20 to-emerald-500/20 rounded-lg border border-green-500/30">
-                <div className="w-6 h-6 bg-green-400 rounded"></div>
+          <Link href="/projects" className="block">
+            <div className="bg-zinc-900/30 backdrop-blur-sm border border-zinc-700/30 rounded-xl p-6 hover:border-zinc-600/50 transition-all duration-300 hover:scale-105 cursor-pointer">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="p-3 bg-gradient-to-br from-green-500/20 to-emerald-500/20 rounded-lg border border-green-500/30">
+                  <div className="w-6 h-6 bg-green-400 rounded"></div>
+                </div>
+                <h4 className="text-lg font-bold text-zinc-100">Funding Fee Arbitrage</h4>
               </div>
-              <h4 className="text-lg font-bold text-zinc-100">Funding Fee Arbitrage</h4>
+              <p className="text-base text-zinc-300 mb-2">Crypto arbitrage trading system</p>
+              <p className="text-sm text-zinc-400 mb-2">Cross-exchange arbitrage</p>
+              <p className="text-sm text-zinc-500">Featured Project</p>
             </div>
-            <p className="text-base text-zinc-300 mb-2">Crypto arbitrage trading system</p>
-            <p className="text-sm text-zinc-400 mb-2">Cross-exchange arbitrage</p>
-            <p className="text-sm text-zinc-500">Featured Project</p>
-          </div>
+          </Link>
 
           {/* Project 3 */}
-          <div className="bg-zinc-900/30 backdrop-blur-sm border border-zinc-700/30 rounded-xl p-6 hover:border-zinc-600/50 transition-all duration-300 hover:scale-105">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="p-3 bg-gradient-to-br from-orange-500/20 to-red-500/20 rounded-lg border border-orange-500/30">
-                <div className="w-6 h-6 bg-orange-400 rounded"></div>
+          <Link href="/projects" className="block">
+            <div className="bg-zinc-900/30 backdrop-blur-sm border border-zinc-700/30 rounded-xl p-6 hover:border-zinc-600/50 transition-all duration-300 hover:scale-105 cursor-pointer">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="p-3 bg-gradient-to-br from-orange-500/20 to-red-500/20 rounded-lg border border-orange-500/30">
+                  <div className="w-6 h-6 bg-orange-400 rounded"></div>
+                </div>
+                <h4 className="text-lg font-bold text-zinc-100">Crypto Exchange API</h4>
               </div>
-              <h4 className="text-lg font-bold text-zinc-100">Crypto Exchange API</h4>
+              <p className="text-base text-zinc-300 mb-2">Internal backend API system</p>
+              <p className="text-sm text-zinc-400 mb-2">Microservices architecture</p>
+              <p className="text-sm text-zinc-500">Featured Project</p>
             </div>
-            <p className="text-base text-zinc-300 mb-2">Internal backend API system</p>
-            <p className="text-sm text-zinc-400 mb-2">Microservices architecture</p>
-            <p className="text-sm text-zinc-500">Featured Project</p>
-          </div>
+          </Link>
         </div>
 
         <div className="text-center">
@@ -316,43 +320,49 @@ export default function Home() {
       
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Master's Degree */}
-          <div className="bg-zinc-900/30 backdrop-blur-sm border border-zinc-700/30 rounded-xl p-6 hover:border-zinc-600/50 transition-all duration-300 hover:scale-105">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="p-3 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-lg border border-blue-500/30">
-                <GraduationCap className="w-6 h-6 text-blue-400" />
+          <Link href="/education" className="block">
+            <div className="bg-zinc-900/30 backdrop-blur-sm border border-zinc-700/30 rounded-xl p-6 hover:border-zinc-600/50 transition-all duration-300 hover:scale-105 cursor-pointer">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="p-3 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-lg border border-blue-500/30">
+                  <GraduationCap className="w-6 h-6 text-blue-400" />
+                </div>
+                <h4 className="text-lg font-bold text-zinc-100">Master's</h4>
               </div>
-              <h4 className="text-lg font-bold text-zinc-100">Master's</h4>
+              <p className="text-base text-zinc-300 mb-2">MCA - AI/ML</p>
+              <p className="text-sm text-zinc-400 mb-2">UPES Dehradun</p>
+              <p className="text-sm text-zinc-500">CGPA: 9.0</p>
             </div>
-            <p className="text-base text-zinc-300 mb-2">MCA - AI/ML</p>
-            <p className="text-sm text-zinc-400 mb-2">UPES Dehradun</p>
-            <p className="text-sm text-zinc-500">CGPA: 9.0</p>
-          </div>
+          </Link>
 
           {/* Bachelor's Degree */}
-          <div className="bg-zinc-900/30 backdrop-blur-sm border border-zinc-700/30 rounded-xl p-6 hover:border-zinc-600/50 transition-all duration-300 hover:scale-105">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="p-3 bg-gradient-to-br from-green-500/20 to-emerald-500/20 rounded-lg border border-green-500/30">
-                <BookOpen className="w-6 h-6 text-green-400" />
+          <Link href="/education" className="block">
+            <div className="bg-zinc-900/30 backdrop-blur-sm border border-zinc-700/30 rounded-xl p-6 hover:border-zinc-600/50 transition-all duration-300 hover:scale-105 cursor-pointer">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="p-3 bg-gradient-to-br from-green-500/20 to-emerald-500/20 rounded-lg border border-green-500/30">
+                  <BookOpen className="w-6 h-6 text-green-400" />
+                </div>
+                <h4 className="text-lg font-bold text-zinc-100">Bachelor's</h4>
               </div>
-              <h4 className="text-lg font-bold text-zinc-100">Bachelor's</h4>
+              <p className="text-base text-zinc-300 mb-2">BSc - Math & Physics</p>
+              <p className="text-sm text-zinc-400 mb-2">Kanpur University</p>
+              <p className="text-sm text-zinc-500">1st Division</p>
             </div>
-            <p className="text-base text-zinc-300 mb-2">BSc - Math & Physics</p>
-            <p className="text-sm text-zinc-400 mb-2">Kanpur University</p>
-            <p className="text-sm text-zinc-500">1st Division</p>
-          </div>
+          </Link>
 
           {/* Intermediate */}
-          <div className="bg-zinc-900/30 backdrop-blur-sm border border-zinc-700/30 rounded-xl p-6 hover:border-zinc-600/50 transition-all duration-300 hover:scale-105">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="p-3 bg-gradient-to-br from-orange-500/20 to-red-500/20 rounded-lg border border-orange-500/30">
-                <Award className="w-6 h-6 text-orange-400" />
+          <Link href="/education" className="block">
+            <div className="bg-zinc-900/30 backdrop-blur-sm border border-zinc-700/30 rounded-xl p-6 hover:border-zinc-600/50 transition-all duration-300 hover:scale-105 cursor-pointer">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="p-3 bg-gradient-to-br from-orange-500/20 to-red-500/20 rounded-lg border border-orange-500/30">
+                  <Award className="w-6 h-6 text-orange-400" />
+                </div>
+                <h4 className="text-lg font-bold text-zinc-100">Intermediate</h4>
               </div>
-              <h4 className="text-lg font-bold text-zinc-100">Intermediate</h4>
+              <p className="text-base text-zinc-300 mb-2">PCM + Computer Science</p>
+              <p className="text-sm text-zinc-400 mb-2">St. Francis Academy</p>
+              <p className="text-sm text-zinc-500">80.8%</p>
             </div>
-            <p className="text-base text-zinc-300 mb-2">PCM + Computer Science</p>
-            <p className="text-sm text-zinc-400 mb-2">St. Francis Academy</p>
-            <p className="text-sm text-zinc-500">80.8%</p>
-          </div>
+          </Link>
         </div>
 
         <div className="text-center">

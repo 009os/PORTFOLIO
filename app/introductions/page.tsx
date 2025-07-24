@@ -1,7 +1,7 @@
 "use client";
 import { Navigation } from "../components/nav";
 import Image from "next/image";
-import { Code, Globe, Music, BookOpen, Heart, Zap, Star, MapPin, Coffee, Target } from "lucide-react";
+import { Code, Globe, Music, BookOpen, Heart, Zap, Star, MapPin, Coffee, Target, Database } from "lucide-react";
 
 export default function Introductions() {
 	return (
@@ -39,8 +39,8 @@ export default function Introductions() {
 					<div className="w-32 h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 mx-auto mb-8 animate-slide-in"></div>
 				</div>
 
-				{/* Main Content Grid */}
-				<div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+				{/* First Row - Professional Journey and Technical Skills */}
+				<div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
 					{/* Professional Section */}
 					<div className="bg-zinc-900/30 backdrop-blur-sm border border-zinc-700/30 rounded-xl p-6 md:p-8 hover:border-zinc-600/50 transition-all duration-500 hover:scale-[1.02] animate-slide-up" style={{ animationDelay: '0.1s' }}>
 						<div className="flex items-center gap-3 mb-6">
@@ -50,7 +50,7 @@ export default function Introductions() {
 							<h2 className="text-2xl font-bold text-zinc-100">Professional Journey</h2>
 						</div>
 						<p className="text-zinc-300 leading-relaxed mb-4">
-							I am a passionate engineer with a strong foundation in backend development. While I stay engaged in the evolving landscape of software development, I also focus on refining crypto trading strategies through automation.
+							I am an engineer with a strong foundation in backend development. While I stay engaged in the evolving landscape of software development, I also focus on refining crypto trading strategies through automation. My expertise spans from building scalable microservices to implementing high-frequency trading algorithms.
 						</p>
 						<div className="flex flex-wrap gap-2">
 							<span className="px-3 py-1 bg-blue-500/20 text-blue-400 rounded-full text-sm border border-blue-500/30">Backend Development</span>
@@ -58,8 +58,52 @@ export default function Introductions() {
 						</div>
 					</div>
 
-					{/* Personal Interests */}
+					{/* Technical Skills */}
 					<div className="bg-zinc-900/30 backdrop-blur-sm border border-zinc-700/30 rounded-xl p-6 md:p-8 hover:border-zinc-600/50 transition-all duration-500 hover:scale-[1.02] animate-slide-up" style={{ animationDelay: '0.2s' }}>
+						<div className="flex items-center gap-3 mb-6">
+							<div className="p-3 bg-gradient-to-br from-indigo-500/20 to-purple-500/20 rounded-lg border border-indigo-500/30">
+								<Database className="w-6 h-6 text-indigo-400" />
+							</div>
+							<h2 className="text-2xl font-bold text-zinc-100">Technical Skills</h2>
+						</div>
+						<div className="space-y-3">
+							<div className="flex flex-wrap items-center gap-3">
+								<span className="text-sm font-semibold text-zinc-300">Backend:</span>
+								<span className="px-2 py-1 bg-blue-500/20 text-blue-400 rounded-full text-xs border border-blue-500/30">NestJS</span>
+							</div>
+							<div className="flex flex-wrap items-center gap-3">
+								<span className="text-sm font-semibold text-zinc-300">Databases:</span>
+								<span className="px-2 py-1 bg-green-500/20 text-green-400 rounded-full text-xs border border-green-500/30">PostgreSQL</span>
+								<span className="px-2 py-1 bg-cyan-500/20 text-cyan-400 rounded-full text-xs border border-cyan-500/30">InfluxDB</span>
+								<span className="px-2 py-1 bg-orange-500/20 text-orange-400 rounded-full text-xs border border-orange-500/30">Redis</span>
+							</div>
+							<div className="flex flex-wrap items-center gap-3">
+								<span className="text-sm font-semibold text-zinc-300">ORMs:</span>
+								<span className="px-2 py-1 bg-purple-500/20 text-purple-400 rounded-full text-xs border border-purple-500/30">Prisma ORM</span>
+							</div>
+							<div className="flex flex-wrap items-center gap-3">
+								<span className="text-sm font-semibold text-zinc-300">Languages:</span>
+								<span className="px-2 py-1 bg-indigo-500/20 text-indigo-400 rounded-full text-xs border border-indigo-500/30">TypeScript</span>
+							</div>
+							<div className="flex flex-wrap items-center gap-3">
+								<span className="text-sm font-semibold text-zinc-300">Realtime Systems:</span>
+								<span className="px-2 py-1 bg-teal-500/20 text-teal-400 rounded-full text-xs border border-teal-500/30">WebSocket</span>
+								<span className="px-2 py-1 bg-emerald-500/20 text-emerald-400 rounded-full text-xs border border-emerald-500/30">CRON Jobs</span>
+								<span className="px-2 py-1 bg-amber-500/20 text-amber-400 rounded-full text-xs border border-amber-500/30">Redis Queues</span>
+							</div>
+							<div className="flex flex-wrap items-center gap-3">
+								<span className="text-sm font-semibold text-zinc-300">Tools:</span>
+								<span className="px-2 py-1 bg-gray-500/20 text-gray-400 rounded-full text-xs border border-gray-500/30">Git</span>
+								<span className="px-2 py-1 bg-red-500/20 text-red-400 rounded-full text-xs border border-red-500/30">Swagger</span>
+								<span className="px-2 py-1 bg-yellow-500/20 text-yellow-400 rounded-full text-xs border border-yellow-500/30">Postman</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				{/* Second Row - Personal Interests (Full Width) */}
+				<div className="mb-12">
+					<div className="bg-zinc-900/30 backdrop-blur-sm border border-zinc-700/30 rounded-xl p-6 md:p-8 hover:border-zinc-600/50 transition-all duration-500 hover:scale-[1.02] animate-slide-up" style={{ animationDelay: '0.3s' }}>
 						<div className="flex items-center gap-3 mb-6">
 							<div className="p-3 bg-gradient-to-br from-green-500/20 to-emerald-500/20 rounded-lg border border-green-500/30">
 								<Heart className="w-6 h-6 text-green-400" />
