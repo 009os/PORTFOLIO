@@ -83,7 +83,7 @@ export default function Example() {
 							I'm always excited to connect with fellow developers, entrepreneurs, and tech enthusiasts.
 						</p>
 					</div>
-					<div className="grid w-full grid-cols-1 gap-4 md:gap-6 mx-auto sm:grid-cols-2 lg:grid-cols-3 lg:gap-8 px-4">
+					<div className="grid w-full grid-cols-1 gap-4 md:gap-6 mx-auto sm:grid-cols-2 lg:grid-cols-3 lg:gap-8 px-4 mb-8 md:mb-16">
 					{socials.map((s, index) => (
 						<div key={s.label} className="animate-slide-up h-full" style={{ animationDelay: `${0.2 + index * 0.05}s` }}>
 							<Card className="h-full">

@@ -7,6 +7,7 @@ import React, { useEffect, useRef, useState } from "react";
 export const Navigation: React.FC = () => {
 	const ref = useRef<HTMLElement>(null);
 	const [isIntersecting, setIntersecting] = useState(true);
+	const [scrollY, setScrollY] = useState(0);
 	const pathname = usePathname();
 
 	useEffect(() => {
@@ -17,6 +18,15 @@ export const Navigation: React.FC = () => {
 
 		observer.observe(ref.current);
 		return () => observer.disconnect();
+	}, []);
+
+	useEffect(() => {
+		const handleScroll = () => {
+			setScrollY(window.scrollY);
+		};
+
+		window.addEventListener('scroll', handleScroll);
+		return () => window.removeEventListener('scroll', handleScroll);
 	}, []);
 
 	return (
@@ -41,7 +51,12 @@ export const Navigation: React.FC = () => {
 							</li>
 						)}
 						{pathname !== "/introductions" && (
-							<li>
+							<li 
+								className={`transition-all duration-500 ${
+									pathname === "/" && scrollY > 400 ? 'opacity-0 -translate-y-4 pointer-events-none hidden' : 'opacity-100 translate-y-0'
+								}`}
+								style={{ display: pathname === "/" && scrollY > 400 ? 'none' : 'block' }}
+							>
 								<Link
 									href="/introductions"
 									className="text-xs md:text-lg font-bold duration-500 text-zinc-400 hover:text-zinc-100 hover:scale-105 transition-all transform hover:shadow-lg hover:shadow-zinc-500/20 px-1 md:px-4 py-1 md:py-2 rounded-md md:rounded-lg hover:bg-zinc-800/30 whitespace-nowrap"
@@ -51,7 +66,12 @@ export const Navigation: React.FC = () => {
 							</li>
 						)}
 						{pathname !== "/work-experience" && (
-							<li>
+							<li 
+								className={`transition-all duration-500 ${
+									pathname === "/" && scrollY > 800 ? 'opacity-0 -translate-y-4 pointer-events-none hidden' : 'opacity-100 translate-y-0'
+								}`}
+								style={{ display: pathname === "/" && scrollY > 800 ? 'none' : 'block' }}
+							>
 								<Link
 									href="/work-experience"
 									className="text-xs md:text-lg font-bold duration-500 text-zinc-400 hover:text-zinc-100 hover:scale-105 transition-all transform hover:shadow-lg hover:shadow-zinc-500/20 px-1 md:px-4 py-1 md:py-2 rounded-md md:rounded-lg hover:bg-zinc-800/30 whitespace-nowrap"
@@ -61,7 +81,12 @@ export const Navigation: React.FC = () => {
 							</li>
 						)}
 						{pathname !== "/projects" && (
-							<li>
+							<li 
+								className={`transition-all duration-500 ${
+									pathname === "/" && scrollY > 1200 ? 'opacity-0 -translate-y-4 pointer-events-none hidden' : 'opacity-100 translate-y-0'
+								}`}
+								style={{ display: pathname === "/" && scrollY > 1200 ? 'none' : 'block' }}
+							>
 								<Link
 									href="/projects"
 									className="text-xs md:text-lg font-bold duration-500 text-zinc-400 hover:text-zinc-100 hover:scale-105 transition-all transform hover:shadow-lg hover:shadow-zinc-500/20 px-1 md:px-4 py-1 md:py-2 rounded-md md:rounded-lg hover:bg-zinc-800/30 whitespace-nowrap"
@@ -71,7 +96,12 @@ export const Navigation: React.FC = () => {
 							</li>
 						)}
 						{pathname !== "/education" && (
-							<li>
+							<li 
+								className={`transition-all duration-500 ${
+									pathname === "/" && scrollY > 1600 ? 'opacity-0 -translate-y-4 pointer-events-none hidden' : 'opacity-100 translate-y-0'
+								}`}
+								style={{ display: pathname === "/" && scrollY > 1600 ? 'none' : 'block' }}
+							>
 								<Link
 									href="/education"
 									className="text-xs md:text-lg font-bold duration-500 text-zinc-400 hover:text-zinc-100 hover:scale-105 transition-all transform hover:shadow-lg hover:shadow-zinc-500/20 px-1 md:px-4 py-1 md:py-2 rounded-md md:rounded-lg hover:bg-zinc-800/30 whitespace-nowrap"
