@@ -73,7 +73,7 @@ export default function Example() {
 			<Navigation />
 					<div className="container flex items-center justify-center min-h-screen px-4 mx-auto">
 			<div className="w-full max-w-6xl">
-				<div className="text-center mb-8 md:mb-12 mt-8 md:mt-16">
+				<div className="text-center mb-8 md:mb-12 mt-20 md:mt-24">
 					<h2 className="text-2xl md:text-4xl font-bold tracking-tight text-zinc-100 sm:text-5xl mb-4 md:mb-6 font-display animate-fade-in">
 						Let's Connect
 					</h2>

@@ -1,64 +1,21 @@
 "use client";
 import Link from "next/link";
 import React from "react";
+import { Navigation } from "../components/nav";
 import { ArrowLeft, Calendar, MapPin, Code, Zap, TrendingUp, Database, Building2 } from "lucide-react";
 
 export default function WorkExperience() {
   return (
     <div className="flex flex-col items-center justify-center w-screen min-h-screen bg-gradient-to-tl from-black via-zinc-600/20 to-black relative">
-      {/* Top Right Navigation - Fixed */}
-      <nav className="fixed top-4 right-4 md:top-8 md:right-8 animate-fade-in z-50 bg-zinc-900/50 backdrop-blur-xl rounded-xl p-2 md:p-3 border border-zinc-700/30 transition-all duration-500">
-        <ul className="flex items-center gap-2 md:gap-6 font-sans">
-          <li>
-                          <Link
-                href="/"
-                className="text-sm md:text-lg font-bold duration-500 text-zinc-400 hover:text-zinc-100 hover:scale-110 transition-all transform hover:shadow-lg hover:shadow-zinc-500/20 px-2 md:px-4 py-1 md:py-2 rounded-lg hover:bg-zinc-800/30"
-              >
-                Home
-              </Link>
-          </li>
-          <li>
-                          <Link
-                href="/education"
-                className="text-sm md:text-lg font-bold duration-500 text-zinc-400 hover:text-zinc-100 hover:scale-110 transition-all transform hover:shadow-lg hover:shadow-zinc-500/20 px-2 md:px-4 py-1 md:py-2 rounded-lg hover:bg-zinc-800/30"
-              >
-                Education
-              </Link>
-          </li>
-          <li>
-                          <Link
-                href="/projects"
-                className="text-sm md:text-lg font-bold duration-500 text-zinc-400 hover:text-zinc-100 hover:scale-110 transition-all transform hover:shadow-lg hover:shadow-zinc-500/20 px-2 md:px-4 py-1 md:py-2 rounded-lg hover:bg-zinc-800/30"
-              >
-                Projects
-              </Link>
-          </li>
-          <li>
-                          <Link
-                href="/introductions"
-                className="text-sm md:text-lg font-bold duration-500 text-zinc-400 hover:text-zinc-100 hover:scale-110 transition-all transform hover:shadow-lg hover:shadow-zinc-500/20 px-2 md:px-4 py-1 md:py-2 rounded-lg hover:bg-zinc-800/30"
-              >
-                About Me
-              </Link>
-          </li>
-          <li>
-            <Link
-              href="/contact"
-              className="text-lg font-bold duration-500 text-zinc-400 hover:text-zinc-100 hover:scale-110 transition-all transform hover:shadow-lg hover:shadow-zinc-500/30 px-4 py-2 rounded-lg hover:bg-zinc-800/30"
-            >
-              Socials
-            </Link>
-          </li>
-        </ul>
-      </nav>
+      <Navigation />
 
       {/* Back Navigation */}
-      <div className="fixed top-8 left-8 animate-fade-in z-50">
+      <div className="fixed top-4 left-4 md:top-8 md:left-8 animate-fade-in z-50">
         <Link
           href="/"
-          className="flex items-center gap-2 text-lg font-bold duration-500 text-zinc-400 hover:text-zinc-100 hover:scale-110 transition-all transform hover:shadow-lg hover:shadow-zinc-500/20 px-4 py-2 rounded-lg hover:bg-zinc-800/30"
+          className="flex items-center gap-1 md:gap-2 text-sm md:text-lg font-bold duration-500 text-zinc-400 hover:text-zinc-100 hover:scale-105 transition-all transform hover:shadow-lg hover:shadow-zinc-500/20 px-2 md:px-4 py-1 md:py-2 rounded-md md:rounded-lg hover:bg-zinc-800/30"
         >
-          <ArrowLeft className="w-5 h-5" />
+          <ArrowLeft className="w-4 h-4 md:w-5 md:h-5" />
           Back
         </Link>
       </div>
