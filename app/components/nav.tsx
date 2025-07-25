@@ -22,19 +22,19 @@ export const Navigation: React.FC = () => {
 	return (
 		<header ref={ref}>
 			<div
-				className={`fixed top-4 right-4 md:top-8 md:right-8 z-50 bg-zinc-900/50 backdrop-blur-xl rounded-xl p-2 md:p-3 border border-zinc-700/30 transition-all duration-500 ${
+				className={`fixed top-2 right-2 md:top-8 md:right-8 z-50 bg-zinc-900/80 backdrop-blur-xl rounded-lg md:rounded-xl p-1 md:p-3 border border-zinc-700/30 transition-all duration-500 ${
 					isIntersecting
 						? "opacity-100"
 						: "opacity-100"
 				}`}
 			>
 				<nav>
-					<ul className="flex items-center gap-2 md:gap-6 font-sans">
+					<ul className="flex items-center gap-1 md:gap-6 font-sans flex-wrap">
 						{pathname !== "/" && (
 							<li>
 								<Link
 									href="/"
-									className="text-sm md:text-lg font-bold duration-500 text-zinc-400 hover:text-zinc-100 hover:scale-110 transition-all transform hover:shadow-lg hover:shadow-zinc-500/20 px-2 md:px-4 py-1 md:py-2 rounded-lg hover:bg-zinc-800/30"
+									className="text-xs md:text-lg font-bold duration-500 text-zinc-400 hover:text-zinc-100 hover:scale-105 transition-all transform hover:shadow-lg hover:shadow-zinc-500/20 px-1 md:px-4 py-1 md:py-2 rounded-md md:rounded-lg hover:bg-zinc-800/30 whitespace-nowrap"
 								>
 									Home
 								</Link>
@@ -44,7 +44,7 @@ export const Navigation: React.FC = () => {
 							<li>
 								<Link
 									href="/introductions"
-									className="text-sm md:text-lg font-bold duration-500 text-zinc-400 hover:text-zinc-100 hover:scale-110 transition-all transform hover:shadow-lg hover:shadow-zinc-500/20 px-2 md:px-4 py-1 md:py-2 rounded-lg hover:bg-zinc-800/30"
+									className="text-xs md:text-lg font-bold duration-500 text-zinc-400 hover:text-zinc-100 hover:scale-105 transition-all transform hover:shadow-lg hover:shadow-zinc-500/20 px-1 md:px-4 py-1 md:py-2 rounded-md md:rounded-lg hover:bg-zinc-800/30 whitespace-nowrap"
 								>
 									About Me
 								</Link>
@@ -54,7 +54,7 @@ export const Navigation: React.FC = () => {
 							<li>
 								<Link
 									href="/work-experience"
-									className="text-sm md:text-lg font-bold duration-500 text-zinc-400 hover:text-zinc-100 hover:scale-110 transition-all transform hover:shadow-lg hover:shadow-zinc-500/20 px-2 md:px-4 py-1 md:py-2 rounded-lg hover:bg-zinc-800/30"
+									className="text-xs md:text-lg font-bold duration-500 text-zinc-400 hover:text-zinc-100 hover:scale-105 transition-all transform hover:shadow-lg hover:shadow-zinc-500/20 px-1 md:px-4 py-1 md:py-2 rounded-md md:rounded-lg hover:bg-zinc-800/30 whitespace-nowrap"
 								>
 									Experience
 								</Link>
@@ -64,7 +64,7 @@ export const Navigation: React.FC = () => {
 							<li>
 								<Link
 									href="/projects"
-									className="text-sm md:text-lg font-bold duration-500 text-zinc-400 hover:text-zinc-100 hover:scale-110 transition-all transform hover:shadow-lg hover:shadow-zinc-500/20 px-2 md:px-4 py-1 md:py-2 rounded-lg hover:bg-zinc-800/30"
+									className="text-xs md:text-lg font-bold duration-500 text-zinc-400 hover:text-zinc-100 hover:scale-105 transition-all transform hover:shadow-lg hover:shadow-zinc-500/20 px-1 md:px-4 py-1 md:py-2 rounded-md md:rounded-lg hover:bg-zinc-800/30 whitespace-nowrap"
 								>
 									Projects
 								</Link>
@@ -74,7 +74,7 @@ export const Navigation: React.FC = () => {
 							<li>
 								<Link
 									href="/education"
-									className="text-sm md:text-lg font-bold duration-500 text-zinc-400 hover:text-zinc-100 hover:scale-110 transition-all transform hover:shadow-lg hover:shadow-zinc-500/20 px-2 md:px-4 py-1 md:py-2 rounded-lg hover:bg-zinc-800/30"
+									className="text-xs md:text-lg font-bold duration-500 text-zinc-400 hover:text-zinc-100 hover:scale-105 transition-all transform hover:shadow-lg hover:shadow-zinc-500/20 px-1 md:px-4 py-1 md:py-2 rounded-md md:rounded-lg hover:bg-zinc-800/30 whitespace-nowrap"
 								>
 									Education
 								</Link>
@@ -84,7 +84,7 @@ export const Navigation: React.FC = () => {
 							<li>
 								<Link
 									href="/contact"
-									className="text-sm md:text-lg font-bold duration-500 text-zinc-400 hover:text-zinc-100 hover:scale-110 transition-all transform hover:shadow-lg hover:shadow-zinc-500/20 px-2 md:px-4 py-1 md:py-2 rounded-lg hover:bg-zinc-800/30"
+									className="text-xs md:text-lg font-bold duration-500 text-zinc-400 hover:text-zinc-100 hover:scale-105 transition-all transform hover:shadow-lg hover:shadow-zinc-500/20 px-1 md:px-4 py-1 md:py-2 rounded-md md:rounded-lg hover:bg-zinc-800/30 whitespace-nowrap"
 								>
 									Socials
 								</Link>
