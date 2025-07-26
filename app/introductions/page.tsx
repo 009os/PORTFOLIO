@@ -1,6 +1,7 @@
 "use client";
 import { Navigation } from "../components/nav";
 import Image from "next/image";
+import Link from "next/link";
 import { Code, Globe, Music, BookOpen, Heart, Zap, Star, MapPin, Coffee, Target, Database } from "lucide-react";
 
 export default function Introductions() {
@@ -138,17 +139,32 @@ export default function Introductions() {
 					</div>
 
 					{/* Poetry & Literature */}
-					<div className="bg-zinc-900/30 backdrop-blur-sm border border-zinc-700/30 rounded-xl p-6 md:p-8 hover:border-zinc-600/50 transition-all duration-500 hover:scale-[1.01] animate-slide-up" style={{ animationDelay: '0.4s' }}>
-						<div className="flex items-center gap-3 mb-4">
-							<div className="p-2 bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-lg border border-purple-500/30">
-								<BookOpen className="w-5 h-5 text-purple-400" />
+					<Link 
+						href="/writing"
+						className="block"
+					>
+						<div className="bg-zinc-900/30 backdrop-blur-sm border border-zinc-700/30 rounded-xl p-6 md:p-8 hover:border-zinc-600/50 transition-all duration-500 hover:scale-[1.01] animate-slide-up cursor-pointer group" style={{ animationDelay: '0.4s' }}>
+							<div className="flex items-center justify-between mb-4">
+								<div className="flex items-center gap-3">
+									<div className="p-2 bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-lg border border-purple-500/30 group-hover:scale-110 transition-transform duration-300">
+										<BookOpen className="w-5 h-5 text-purple-400" />
+									</div>
+									<h3 className="text-xl font-bold text-zinc-100 group-hover:text-purple-300 transition-colors duration-300">Poetry & Literature</h3>
+								</div>
+								<div className="text-purple-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+									<svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+										<path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+									</svg>
+								</div>
 							</div>
-							<h3 className="text-xl font-bold text-zinc-100">Poetry & Literature</h3>
+							<p className="text-zinc-300 leading-relaxed mb-3">
+								In my quieter moments, I find solace in the art of Urdu poetry, particularly in writing and reading Nazms and Ghazals. The rhythm and depth of these poetic forms provide a beautiful contrast to the logical world of coding.
+							</p>
+							<div className="flex items-center gap-2 text-purple-400 group-hover:text-purple-300 transition-colors duration-300">
+								<span className="text-sm font-medium">Read my poetry collection →</span>
+							</div>
 						</div>
-						<p className="text-zinc-300 leading-relaxed">
-							In my quieter moments, I find solace in the art of Urdu poetry, particularly in writing and reading Nazms and Ghazals. The rhythm and depth of these poetic forms provide a beautiful contrast to the logical world of coding.
-						</p>
-					</div>
+					</Link>
 
 					{/* Call to Action */}
 					<div className="bg-gradient-to-r from-blue-500/10 to-purple-500/10 backdrop-blur-sm border border-blue-500/30 rounded-xl p-6 md:p-8 text-center animate-slide-up" style={{ animationDelay: '0.5s' }}>

@@ -110,6 +110,21 @@ export const Navigation: React.FC = () => {
 								</Link>
 							</li>
 						)}
+						{pathname !== "/writing" && (
+							<li 
+								className={`transition-all duration-500 ${
+									pathname === "/" && scrollY > 2000 ? 'opacity-0 -translate-y-4 pointer-events-none hidden' : 'opacity-100 translate-y-0'
+								}`}
+								style={{ display: pathname === "/" && scrollY > 2000 ? 'none' : 'block' }}
+							>
+								<Link
+									href="/writing"
+									className="text-xs md:text-lg font-bold duration-500 text-zinc-400 hover:text-zinc-100 hover:scale-105 transition-all transform hover:shadow-lg hover:shadow-zinc-500/20 px-1 md:px-4 py-1 md:py-2 rounded-md md:rounded-lg hover:bg-zinc-800/30 whitespace-nowrap"
+								>
+									Poetry
+								</Link>
+							</li>
+						)}
 						{pathname !== "/contact" && (
 							<li>
 								<Link

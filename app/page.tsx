@@ -311,6 +311,75 @@ export default function Home() {
         </div>
       </div>
 
+      {/* Poetry Preview */}
+      <div 
+        className={`w-full max-w-6xl mx-auto px-4 md:px-8 mt-16 md:mt-32 transition-all duration-1000 ${
+          scrollY > 900 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+        }`}
+      >
+        <div className="text-center mb-8 md:mb-12">
+          <h3 className="text-2xl md:text-4xl font-bold text-zinc-100 mb-4 font-display">
+            Poetry
+          </h3>
+          <div className="w-24 h-1 bg-gradient-to-r from-purple-500 via-pink-500 to-indigo-500 mx-auto"></div>
+        </div>
+      
+        <div className="max-w-4xl mx-auto">
+          <Link href="/writing" className="block">
+            <div className="bg-gradient-to-br from-purple-900/30 via-pink-900/20 to-indigo-900/30 backdrop-blur-sm border border-purple-500/30 rounded-xl p-6 md:p-8 hover:border-purple-400/50 transition-all duration-300 hover:scale-105 cursor-pointer group">
+              <div className="flex items-center gap-4 mb-4">
+                <div className="p-3 bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-lg border border-purple-500/30 group-hover:scale-110 transition-transform duration-300">
+                  <BookOpen className="w-6 h-6 text-purple-400" />
+                </div>
+                <div>
+                  <h4 className="text-xl md:text-2xl font-bold text-zinc-100 mb-1 group-hover:text-purple-300 transition-colors duration-300">
+                    हुजरे की शाम
+                  </h4>
+                  <p className="text-purple-400 font-medium">Huzre Ki Shaam</p>
+                </div>
+              </div>
+              <p className="text-base md:text-lg text-zinc-300 leading-relaxed mb-4">
+                A collection of Hindi and Urdu poetry exploring the journey of love from attraction to devotion. 
+                Where code meets verse, and logic dances with emotion.
+              </p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                <span className="px-2 py-1 bg-pink-500/20 text-pink-400 rounded-full text-xs border border-pink-500/30">dilkashi</span>
+                <span className="px-2 py-1 bg-teal-500/20 text-teal-400 rounded-full text-xs border border-teal-500/30">uns</span>
+                <span className="px-2 py-1 bg-blue-500/20 text-blue-400 rounded-full text-xs border border-blue-500/30">ishq</span>
+                <span className="px-2 py-1 bg-purple-500/20 text-purple-400 rounded-full text-xs border border-purple-500/30">akidat</span>
+                <span className="px-2 py-1 bg-indigo-500/20 text-indigo-400 rounded-full text-xs border border-indigo-500/30">ibadat</span>
+                <span className="px-2 py-1 bg-red-500/20 text-red-400 rounded-full text-xs border border-red-500/30">junoon</span>
+                <span className="px-2 py-1 bg-orange-500/20 text-orange-400 rounded-full text-xs border border-orange-500/30">maut</span>
+              </div>
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-4 text-sm text-zinc-400">
+                  <span className="flex items-center gap-1">
+                    <span className="w-2 h-2 bg-yellow-400 rounded-full"></span>
+                    155+ Poems
+                  </span>
+                  <span className="flex items-center gap-1">
+                    <span className="w-2 h-2 bg-red-400 rounded-full"></span>
+                    Hindi & Urdu
+                  </span>
+                </div>
+                <div className="text-purple-400 group-hover:text-purple-300 transition-colors duration-300">
+                  <ArrowRight className="w-5 h-5" />
+                </div>
+              </div>
+            </div>
+          </Link>
+        </div>
+
+        <div className="text-center mt-8">
+          <Link
+            href="/writing"
+            className="inline-flex items-center gap-2 text-base text-zinc-400 hover:text-zinc-300 transition-colors duration-200 underline underline-offset-4 font-medium"
+          >
+            Read My Poetry Collection <ArrowRight className="w-4 h-4" />
+          </Link>
+        </div>
+      </div>
+
       {/* Bottom spacing for scroll */}
       <div className="h-32"></div>
     </div>
