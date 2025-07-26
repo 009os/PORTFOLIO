@@ -1,8 +1,8 @@
-// File: /Users/omji/Desktop/PORTFOLIO/app/education/page.tsx
-import * as entry from '../../../../app/education/page.js'
+// File: /Users/omji/Desktop/PORTFOLIO/app/introductions/page.tsx
+import * as entry from '../../../../app/introductions/page.js'
 import type { ResolvingMetadata } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
-type TEntry = typeof import('../../../../app/education/page.js')
+type TEntry = typeof import('../../../../app/introductions/page.js')
 
 // Check that the entry is a valid entry
 checkFields<Diff<{

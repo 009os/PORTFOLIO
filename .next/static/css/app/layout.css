@@ -1077,9 +1077,6 @@ video {
 .left-20 {
   left: 5rem;
 }
-.left-4 {
-  left: 1rem;
-}
 .right-10 {
   right: 2.5rem;
 }
@@ -1097,9 +1094,6 @@ video {
 }
 .top-20 {
   top: 5rem;
-}
-.top-4 {
-  top: 1rem;
 }
 .top-40 {
   top: 10rem;
@@ -2620,10 +2614,6 @@ video {
 
   .md\:bottom-8 {
     bottom: 2rem;
-  }
-
-  .md\:left-8 {
-    left: 2rem;
   }
 
   .md\:right-8 {
