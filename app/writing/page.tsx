@@ -1,6 +1,6 @@
 "use client";
 import { Navigation } from "../components/nav";
-import { ArrowLeft, BookOpen, Heart, Star, Quote, ExternalLink, PenTool } from "lucide-react";
+import { BookOpen, Heart, Star, Quote, ExternalLink, PenTool } from "lucide-react";
 import Link from "next/link";
 
 export default function Writing() {
@@ -16,16 +16,7 @@ export default function Writing() {
 				<div className="absolute bottom-20 right-10 w-1 h-1 bg-indigo-400 rounded-full animate-pulse opacity-70"></div>
 			</div>
 
-			{/* Back Navigation */}
-			<div className="fixed top-4 left-4 md:top-8 md:left-8 animate-fade-in z-50">
-				<Link
-					href="/introductions"
-					className="flex items-center gap-1 md:gap-2 text-sm md:text-lg font-bold duration-500 text-zinc-400 hover:text-zinc-100 hover:scale-105 transition-all transform hover:shadow-lg hover:shadow-zinc-500/20 px-2 md:px-4 py-1 md:py-2 rounded-md md:rounded-lg hover:bg-zinc-800/30"
-				>
-					<ArrowLeft className="w-4 h-4 md:w-5 md:h-5" />
-					Back
-				</Link>
-			</div>
+
 
 			<div className="w-full max-w-4xl mx-auto px-4 md:px-8 py-16 mt-20 md:mt-16">
 				{/* Hero Section */}

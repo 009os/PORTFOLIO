@@ -2,23 +2,14 @@
 import Link from "next/link";
 import React from "react";
 import { Navigation } from "../components/nav";
-import { ArrowLeft, Calendar, MapPin, Code, Zap, TrendingUp, Database, Building2 } from "lucide-react";
+import { Calendar, MapPin, Code, Zap, TrendingUp, Database, Building2 } from "lucide-react";
 
 export default function WorkExperience() {
   return (
     <div className="flex flex-col items-center justify-center w-screen min-h-screen bg-gradient-to-tl from-black via-zinc-600/20 to-black relative">
       <Navigation />
 
-      {/* Back Navigation */}
-      <div className="fixed top-4 left-4 md:top-8 md:left-8 animate-fade-in z-50">
-        <Link
-          href="/"
-          className="flex items-center gap-1 md:gap-2 text-sm md:text-lg font-bold duration-500 text-zinc-400 hover:text-zinc-100 hover:scale-105 transition-all transform hover:shadow-lg hover:shadow-zinc-500/20 px-2 md:px-4 py-1 md:py-2 rounded-md md:rounded-lg hover:bg-zinc-800/30"
-        >
-          <ArrowLeft className="w-4 h-4 md:w-5 md:h-5" />
-          Back
-        </Link>
-      </div>
+
 
       <div className="w-full max-w-4xl mx-auto px-8 py-16">
         {/* Header */}
