@@ -16,6 +16,11 @@
       "static/chunks/main-app.js",
       "static/chunks/app/writing/page.js"
     ],
+    "/introductions/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/introductions/page.js"
+    ],
     "/projects/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -26,15 +31,10 @@
       "static/chunks/main-app.js",
       "static/chunks/app/projects/layout.js"
     ],
-    "/work-experience/page": [
+    "/education/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/work-experience/page.js"
-    ],
-    "/introductions/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/introductions/page.js"
+      "static/chunks/app/education/page.js"
     ],
     "/contact/page": [
       "static/chunks/webpack.js",

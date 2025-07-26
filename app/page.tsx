@@ -321,21 +321,21 @@ export default function Home() {
           <h3 className="text-2xl md:text-4xl font-bold text-zinc-100 mb-4 font-display">
             Poetry
           </h3>
-          <div className="w-24 h-1 bg-gradient-to-r from-purple-500 via-pink-500 to-indigo-500 mx-auto"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-zinc-500 via-zinc-400 to-zinc-600 mx-auto"></div>
         </div>
       
         <div className="max-w-4xl mx-auto">
           <Link href="/writing" className="block">
-            <div className="bg-gradient-to-br from-purple-900/30 via-pink-900/20 to-indigo-900/30 backdrop-blur-sm border border-purple-500/30 rounded-xl p-6 md:p-8 hover:border-purple-400/50 transition-all duration-300 hover:scale-105 cursor-pointer group">
+            <div className="bg-gradient-to-br from-zinc-900/30 via-zinc-800/20 to-zinc-900/30 backdrop-blur-sm border border-zinc-600/30 rounded-xl p-6 md:p-8 hover:border-zinc-500/50 transition-all duration-300 hover:scale-105 cursor-pointer group">
               <div className="flex items-center gap-4 mb-4">
-                <div className="p-3 bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-lg border border-purple-500/30 group-hover:scale-110 transition-transform duration-300">
-                  <BookOpen className="w-6 h-6 text-purple-400" />
+                <div className="p-3 bg-gradient-to-br from-zinc-500/20 to-zinc-600/20 rounded-lg border border-zinc-500/30 group-hover:scale-110 transition-transform duration-300">
+                  <BookOpen className="w-6 h-6 text-zinc-300" />
                 </div>
                 <div>
-                  <h4 className="text-xl md:text-2xl font-bold text-zinc-100 mb-1 group-hover:text-purple-300 transition-colors duration-300">
+                  <h4 className="text-xl md:text-2xl font-bold text-zinc-100 mb-1 group-hover:text-zinc-200 transition-colors duration-300">
                     हुजरे की शाम
                   </h4>
-                  <p className="text-purple-400 font-medium">Huzre Ki Shaam</p>
+                  <p className="text-zinc-400 font-medium">Huzre Ki Shaam</p>
                 </div>
               </div>
               <p className="text-base md:text-lg text-zinc-300 leading-relaxed mb-4">
@@ -343,13 +343,6 @@ export default function Home() {
                 Where code meets verse, and logic dances with emotion.
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
-                <span className="px-2 py-1 bg-pink-500/20 text-pink-400 rounded-full text-xs border border-pink-500/30">dilkashi</span>
-                <span className="px-2 py-1 bg-teal-500/20 text-teal-400 rounded-full text-xs border border-teal-500/30">uns</span>
-                <span className="px-2 py-1 bg-blue-500/20 text-blue-400 rounded-full text-xs border border-blue-500/30">ishq</span>
-                <span className="px-2 py-1 bg-purple-500/20 text-purple-400 rounded-full text-xs border border-purple-500/30">akidat</span>
-                <span className="px-2 py-1 bg-indigo-500/20 text-indigo-400 rounded-full text-xs border border-indigo-500/30">ibadat</span>
-                <span className="px-2 py-1 bg-red-500/20 text-red-400 rounded-full text-xs border border-red-500/30">junoon</span>
-                <span className="px-2 py-1 bg-orange-500/20 text-orange-400 rounded-full text-xs border border-orange-500/30">maut</span>
               </div>
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-4 text-sm text-zinc-400">
@@ -362,7 +355,7 @@ export default function Home() {
                     Hindi & Urdu
                   </span>
                 </div>
-                <div className="text-purple-400 group-hover:text-purple-300 transition-colors duration-300">
+                <div className="text-zinc-400 group-hover:text-zinc-300 transition-colors duration-300">
                   <ArrowRight className="w-5 h-5" />
                 </div>
               </div>
