@@ -1,14 +1,7 @@
 # Omji Shukla - Portfolio Website
 
-<div align="center">
-  <img src="public/profile.jpg" alt="Omji Shukla" width="150" height="150" style="border-radius: 50%;">
-  <br/>
-  <h3>Full-Stack Developer & Quantitative Trading Engineer</h3>
-  <p>Building high-performance systems at the intersection of finance and technology</p>
-  
-  [![Website](https://img.shields.io/badge/Website-omjishukla.com-blue?style=for-the-badge&logo=vercel)](https://omjishukla.com)
-  [![Deploy with Vercel](https://img.shields.io/badge/Deploy%20with-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/new/upstash/clone?demo-title=Next.js%20Portfolio%20with%20Pageview%20Counter&demo-description=Portfolio%20site%20with%20pageview%20counter%2C%20built%20with%20Next.js%2013%20App%20Router%2C%20Contentlayer%2C%20and%20Upstash%20Redis.&demo-url=https%3A%2F%2Fomjishukla.com%2F&demo-image=%2F%2Fimages.ctfassets.net%2Fe5382hct74si%2F1DA8n5a6WaP9p1FXf9LmUY%2Fc6264fa2732355787bf657df92dda8a1%2FCleanShot_2023-04-17_at_14.17.37.png&project-name=Next.js%20Portfolio%20with%20Pageview%20Counter&repository-name=nextjs-portfolio-pageview-counter&repository-url=https%3A%2F%2Fgithub.com%2Fomjishukla%2Fportfolio&from=templates&integration-ids=oac_V3R1GIpkoJorr6fqyiwdhl17)
-</div>
+## 🔗 Links
+- **Website**: [009os.vercel.app](https://009os.vercel.app)
 
 ## 🚀 Overview
 
@@ -189,11 +182,6 @@ The portfolio includes real-time page view tracking using Upstash Redis:
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🔗 Links
-
-- **Website**: [omjishukla.com](https://omjishukla.com)
-- **GitHub**: [@omjishukla](https://github.com/omjishukla)
-- **LinkedIn**: [Omji Shukla](https://linkedin.com/in/omjishukla)
 
 ## 🙏 Acknowledgments
 
