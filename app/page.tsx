@@ -53,7 +53,15 @@ export default function Home() {
 
       {/* Scroll Indicator */}
       <div className="flex justify-center mt-12 animate-fade-in" style={{ animationDelay: '0.6s' }}>
-        <div className="flex flex-col items-center text-zinc-400 hover:text-zinc-300 transition-colors duration-300 cursor-pointer group">
+        <div 
+          className="flex flex-col items-center text-zinc-400 hover:text-zinc-300 transition-colors duration-300 cursor-pointer group"
+          onClick={() => {
+            const aboutSection = document.querySelector('[data-section="about"]');
+            if (aboutSection) {
+              aboutSection.scrollIntoView({ behavior: 'smooth' });
+            }
+          }}
+        >
           <span className="text-lg font-semibold mb-3 opacity-80 group-hover:opacity-100 transition-opacity">Scroll to explore more</span>
           <ChevronDown className="w-8 h-8 animate-bounce" />
         </div>
@@ -61,6 +69,7 @@ export default function Home() {
 
       {/* About Me Preview */}
       <div 
+        data-section="about"
         className={`w-full max-w-6xl mx-auto px-4 md:px-8 mt-16 md:mt-32 transition-all duration-1000 ${
           scrollY > 100 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
         }`}

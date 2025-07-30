@@ -6,12 +6,12 @@ import { Analytics } from "./components/analytics";
 export const metadata: Metadata = {
   metadataBase: new URL("https://omjishukla.com"),
   title: {
-    default: "Omji Shukla - Portfolio",
+    default: "Omji Shukla",
     template: "%s | Omji Shukla",
   },
   description: "Software Engineer building robust and scalable market-making systems at Pi42, a crypto derivatives exchange.",
   openGraph: {
-    title: "Omji Shukla - Portfolio",
+    title: "Omji Shukla",
     description:
       "Software Engineer building robust and scalable market-making systems at Pi42, a crypto derivatives exchange.",
     url: "https://omjishukla.com",
@@ -42,7 +42,13 @@ export const metadata: Metadata = {
     card: "summary_large_image",
   },
   icons: {
-    shortcut: "/favicon.png",
+    icon: [
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/profile.png", sizes: "any", type: "image/png" },
+    ],
+    shortcut: "/profile.png",
+    apple: "/profile.png",
   },
 };
 
