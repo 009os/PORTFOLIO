@@ -201,7 +201,7 @@ export default function Home() {
                 <div className="p-3 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-lg border border-blue-500/30">
                   <div className="w-6 h-6 bg-blue-400 rounded"></div>
                 </div>
-                <h4 className="text-lg font-bold text-zinc-100">Binance Multi-Leg Options Hedging Fund</h4>
+                <h4 className="text-lg font-bold text-zinc-100">Binance Multi-Leg Options Hedge Fund</h4>
               </div>
               <p className="text-base text-zinc-300 mb-2">2-way delta-neutral options hedging system</p>
               <p className="text-sm text-zinc-400 mb-2">1.5+ billion USDT monthly volume</p>
@@ -216,9 +216,9 @@ export default function Home() {
                 <div className="p-3 bg-gradient-to-br from-green-500/20 to-emerald-500/20 rounded-lg border border-green-500/30">
                   <div className="w-6 h-6 bg-green-400 rounded"></div>
                 </div>
-                <h4 className="text-lg font-bold text-zinc-100">Bybit Multi-Leg Hedging Fund</h4>
+                <h4 className="text-lg font-bold text-zinc-100">Bybit Options Hedge Fund</h4>
               </div>
-              <p className="text-base text-zinc-300 mb-2">Cross-exchange options hedging system</p>
+              <p className="text-base text-zinc-300 mb-2">2-way Delta neutral options vs futures</p>
               <p className="text-sm text-zinc-400 mb-2">800+ million USDT monthly volume</p>
               <p className="text-sm text-zinc-500">Featured Project</p>
             </div>
