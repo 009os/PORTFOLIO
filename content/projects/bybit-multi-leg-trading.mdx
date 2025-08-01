@@ -1,16 +1,71 @@
 ---
-title: Bybit Multi-Leg Trading System
-description: Advanced multi-leg futures trading system built with NestJS, WebSocket, Redis, Prisma ORM, and InfluxDB, executing complex strategies on Bybit's derivatives platform. It delivers high-frequency arbitrage and spread trading with sub-millisecond precision across multiple futures contracts and perpetual swaps.
+title: Bybit Multi-Leg Hedging Fund
+description: Advanced multi-leg options hedging system built with NestJS, WebSocket, Redis, Prisma ORM, and InfluxDB, executing complex strategies on Bybit's derivatives platform. It delivers high-frequency arbitrage and spread trading with sub-millisecond precision across multiple futures contracts and perpetual swaps, processing 800+ million USDT options volume per month.
 date: "2025-5-15"
 published: true
 ---
 
-**Bybit Multi-Leg Trading System** is a sophisticated algorithmic trading platform designed to execute complex multi-leg strategies on Bybit's derivatives exchange. This production-grade system handles futures arbitrage, calendar spreads, and cross-pair strategies with institutional-level precision.
+**Bybit Multi-Leg Hedging Fund** is a sophisticated algorithmic trading platform designed to execute complex multi-leg strategies on Bybit's derivatives exchange. This production-grade system handles futures arbitrage, calendar spreads, and cross-pair strategies with institutional-level precision.
 
-Built entirely in **NestJS**, it integrates **real-time market data feeds** from Bybit's WebSocket API and **REST APIs** to execute high-frequency trades across futures contracts, perpetual swaps, and spot markets.
+## Performance Metrics
 
-The system employs advanced quantitative techniques such as **basis trading** between spot and futures, **calendar spread arbitrage** across different expiries, and **funding rate arbitrage** on perpetual contracts. Under the hood, it uses **Redis** for ultra-fast in-memory operations, **Prisma ORM** for reliable database access, and **InfluxDB** to analyze time-series performance metrics.
+- **Monthly Trading Volume**: 800+ million USDT
+- **Daily Trades**: 25,000+ transactions processed
+- **Execution Latency**: Sub-50ms order placement
+- **System Uptime**: 99.9% availability
+- **Supported Assets**: BTC, ETH, SOL, ADA, DOT, LINK
+- **Strategy Coverage**: Futures, Perpetual Swaps, Spot Markets
+- **Risk-Adjusted Returns**: 12-20% annualized yield
+- **Market Impact**: Top 5% of Bybit derivatives volume
 
-With a daily trading volume exceeding **50 million USDT**, the system processes over 25,000 trades daily across multiple cryptocurrency pairs including BTC, ETH.
+## Technical Architecture
+
+Built entirely in **NestJS**, the system features a high-performance trading architecture:
+
+- **Real-time Market Data Processing**: WebSocket feeds from Bybit with <50ms latency
+- **Multi-Asset Order Execution**: Simultaneous trading across futures, perpetuals, and spot
+- **Intelligent Order Routing**: Dynamic order placement based on liquidity and volatility
+- **Advanced Risk Management**: Real-time position monitoring and automated hedging
+- **Database Layer**: **Prisma ORM** with PostgreSQL for reliable data persistence
+- **Caching Layer**: **Redis** for ultra-fast in-memory operations and order queuing
+- **Analytics Engine**: **InfluxDB** for time-series performance analysis
+
+## Advanced Trading Strategies
+
+The system employs sophisticated quantitative techniques:
+
+### **2-Way Delta-Neutral Hedging**
+- **Primary Strategy**: Options-based delta hedging for optimal exposure
+- **Backup Strategy**: Automatic futures hedging when options orders are delayed
+- **Continuous Exposure**: Never leaves positions unhedged
+- **Dynamic Rebalancing**: Real-time position adjustment based on market movements
+
+### **Basis Trading**
+- **Spot-Futures Arbitrage**: Exploits price differentials between spot and futures
+- **Funding Rate Optimization**: Captures funding rate inefficiencies on perpetual contracts
+- **Calendar Spread Arbitrage**: Trades across different futures expiries
+
+### **Cross-Asset Strategies**
+- **Multi-Pair Trading**: Simultaneous positions across different cryptocurrency pairs
+- **Correlation Trading**: Exploits correlations between BTC, ETH, and altcoins
+- **Volatility Arbitrage**: Captures volatility differentials across assets
+
+## Risk Management Features
+
+- **Real-time P&L Tracking**: Live profit/loss monitoring across all positions
+- **VaR Calculations**: Value at Risk analysis with 95% confidence intervals
+- **Position Limits**: Automated position sizing based on volatility and liquidity
+- **Stop-Loss Mechanisms**: Dynamic stop-loss triggers based on market conditions
+- **Correlation Monitoring**: Cross-asset correlation analysis for portfolio risk
+- **Funding Rate Management**: Automated funding rate optimization
+
+## Market Impact
+
+With a monthly options trading volume exceeding **800+ million USDT**, the system processes over 25,000 trades daily across multiple cryptocurrency pairs including BTC, ETH, contributing to:
+
+- **Market Liquidity**: Providing liquidity across multiple asset pairs
+- **Price Discovery**: Contributing to efficient price formation
+- **Risk Transfer**: Enabling institutional risk management
+- **Market Efficiency**: Reducing bid-ask spreads through arbitrage
 
 The platform features advanced risk management including **position sizing algorithms**, **real-time P&L tracking**, and **automated stop-loss mechanisms** with comprehensive monitoring dashboards for strategy performance and regulatory compliance.

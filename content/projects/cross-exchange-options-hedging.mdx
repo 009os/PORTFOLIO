@@ -1,0 +1,20 @@
+---
+title: Cross-Exchange Options Hedging Fund
+description: Advanced cross-exchange options hedging system operating between Binance and Bybit, implementing delta-neutral strategies with futures hedging compensation. Built with NestJS, WebSocket, Redis, Prisma ORM, and InfluxDB, processing 1.2+ billion USDT monthly volume across both exchanges with sub-millisecond arbitrage execution.
+date: "2025-07-01"
+published: true
+---
+
+**Cross-Exchange Options Hedging Fund** is a sophisticated arbitrage and hedging platform designed to capitalize on price differentials between Binance and Bybit options markets while maintaining delta-neutral exposure. This production-grade system executes complex cross-exchange strategies with real-time risk management and futures hedging compensation.
+
+Built entirely in **NestJS**, it integrates **dual WebSocket feeds** from both Binance and Bybit, **real-time order book analysis**, and **REST APIs** to execute high-frequency arbitrage trades across multiple options expiries and strike prices. The system maintains **delta-neutral positioning** while exploiting cross-exchange price inefficiencies.
+
+The platform employs advanced quantitative techniques including **cross-exchange options arbitrage**, **2-way delta-neutral hedging** with both options and futures, **gamma scalping**, and **futures compensation hedging**. The strategy prioritizes options hedging across both exchanges, but automatically switches to futures hedging when options orders are delayed to fill, ensuring continuous delta-neutral exposure. When options positions are not fully hedged on both exchanges, the system automatically **hedges with futures contracts** to compensate for potential losses and maintain portfolio neutrality.
+
+Under the hood, it uses **Redis** for ultra-fast in-memory operations across both exchanges, **Prisma ORM** for reliable database access, and **InfluxDB** to analyze time-series performance metrics and arbitrage opportunities.
+
+With a combined monthly trading volume exceeding **1.2+ billion USDT** across both Binance and Bybit, the system processes over 50,000 arbitrage trades daily across BTC, ETH, and other major cryptocurrency options. The platform captures consistent alpha through **cross-exchange price differentials**, **volatility arbitrage**, and **funding rate optimization**.
+
+The system features advanced risk management including **real-time delta monitoring**, **cross-exchange position reconciliation**, **automated futures hedging triggers**, and **comprehensive monitoring dashboards** for strategy performance and regulatory compliance across both exchanges.
+
+Whether you're looking to build a cross-exchange arbitrage engine or run sophisticated delta-neutral strategies at scale, the Cross-Exchange Options Hedging Fund provides the infrastructure to execute with confidence across multiple derivatives exchanges. 

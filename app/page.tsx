@@ -201,10 +201,10 @@ export default function Home() {
                 <div className="p-3 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-lg border border-blue-500/30">
                   <div className="w-6 h-6 bg-blue-400 rounded"></div>
                 </div>
-                <h4 className="text-lg font-bold text-zinc-100">Binance Multi-Leg</h4>
+                <h4 className="text-lg font-bold text-zinc-100">Binance Multi-Leg Options Hedging Fund</h4>
               </div>
-              <p className="text-base text-zinc-300 mb-2">Multi-leg options execution system</p>
-              <p className="text-sm text-zinc-400 mb-2">High-frequency trading</p>
+              <p className="text-base text-zinc-300 mb-2">2-way delta-neutral options hedging system</p>
+              <p className="text-sm text-zinc-400 mb-2">1.5+ billion USDT monthly volume</p>
               <p className="text-sm text-zinc-500">Featured Project</p>
             </div>
           </Link>
@@ -216,10 +216,10 @@ export default function Home() {
                 <div className="p-3 bg-gradient-to-br from-green-500/20 to-emerald-500/20 rounded-lg border border-green-500/30">
                   <div className="w-6 h-6 bg-green-400 rounded"></div>
                 </div>
-                <h4 className="text-lg font-bold text-zinc-100">Funding Fee Arbitrage</h4>
+                <h4 className="text-lg font-bold text-zinc-100">Bybit Multi-Leg Hedging Fund</h4>
               </div>
-              <p className="text-base text-zinc-300 mb-2">Crypto arbitrage trading system</p>
-              <p className="text-sm text-zinc-400 mb-2">Cross-exchange arbitrage</p>
+              <p className="text-base text-zinc-300 mb-2">Cross-exchange options hedging system</p>
+              <p className="text-sm text-zinc-400 mb-2">800+ million USDT monthly volume</p>
               <p className="text-sm text-zinc-500">Featured Project</p>
             </div>
           </Link>
@@ -231,10 +231,10 @@ export default function Home() {
                 <div className="p-3 bg-gradient-to-br from-orange-500/20 to-red-500/20 rounded-lg border border-orange-500/30">
                   <div className="w-6 h-6 bg-orange-400 rounded"></div>
                 </div>
-                <h4 className="text-lg font-bold text-zinc-100">Crypto Exchange API</h4>
+                <h4 className="text-lg font-bold text-zinc-100">Internal Admin Panel Backend API</h4>
               </div>
-              <p className="text-base text-zinc-300 mb-2">Internal backend API system</p>
-              <p className="text-sm text-zinc-400 mb-2">Microservices architecture</p>
+              <p className="text-base text-zinc-300 mb-2">Multi-department admin panel system</p>
+              <p className="text-sm text-zinc-400 mb-2">70% reduction in dev team workload</p>
               <p className="text-sm text-zinc-500">Featured Project</p>
             </div>
           </Link>
