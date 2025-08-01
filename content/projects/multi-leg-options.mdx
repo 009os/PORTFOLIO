@@ -17,13 +17,12 @@ published: true
 - **Supported Assets**: BTC, ETH, SOL, ADA options
 - **Expiry Coverage**: 7-day to 3-month expiries
 - **Strike Coverage**: 20+ strike prices per expiry
-- **Risk-Adjusted Returns**: 15-25% annualized yield
 
 ## Technical Architecture
 
 Built entirely in **NestJS**, the system features a high-frequency trading architecture:
 
-- **Real-time Order Book Processing**: Live feeds from Binance with under 1ms latency
+- **Real-time Order Book Processing**: Live feeds from Binance with under 100ms latency
 - **Multi-Leg Order Execution**: Simultaneous placement across multiple expiries and strikes
 - **Intelligent Order Routing**: Dynamic order placement based on liquidity and volatility
 - **Advanced Risk Management**: Real-time position monitoring and automated hedging
@@ -41,10 +40,9 @@ The system employs sophisticated options strategies:
 - **Continuous Exposure**: Never leaves positions unhedged
 - **Dynamic Rebalancing**: Real-time position adjustment based on market movements
 
-### **Gamma Scalping**
-- **Volatility Capture**: Exploits gamma changes in options positions
+### **Delta Scalping**
 - **Dynamic Hedging**: Adjusts delta exposure based on underlying price movements
-- **Theta Decay Management**: Optimizes time decay exposure across multiple legs
+
 
 ### **IV-Driven Directional Bias**
 - **Implied Volatility Analysis**: Real-time IV surface modeling
@@ -54,10 +52,8 @@ The system employs sophisticated options strategies:
 ## Risk Management Features
 
 - **Real-time P&L Tracking**: Live profit/loss monitoring across all positions
-- **VaR Calculations**: Value at Risk analysis with 95% confidence intervals
 - **Position Limits**: Automated position sizing based on volatility and liquidity
 - **Stop-Loss Mechanisms**: Dynamic stop-loss triggers based on market conditions
-- **Correlation Monitoring**: Cross-asset correlation analysis for portfolio risk
 
 ## Market Impact
 
@@ -66,6 +62,5 @@ With a monthly trading volume exceeding **1.5 billion USDT**, Multi Leg Options 
 - **Dynamic Rebalancing**: Automatic position adjustment based on market conditions
 - **Volatility Arbitrage**: Exploiting IV differentials across multiple expiries
 - **Risk-Managed Execution**: Sophisticated order execution algorithms
-- **Cross-Asset Hedging**: Multi-leg strategies across different underlying assets
 
 Whether you're looking to build a market-neutral options engine or run latency-sensitive multi-leg strategies at scale, Multi Leg Options provides the infrastructure to execute with confidence.

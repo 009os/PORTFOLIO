@@ -13,9 +13,8 @@ published: true
 - **Daily Trades**: 25,000+ transactions processed
 - **Execution Latency**: Sub-50ms order placement
 - **System Uptime**: 99.9% availability
-- **Supported Assets**: BTC, ETH, SOL, ADA, DOT, LINK
-- **Strategy Coverage**: Futures, Perpetual Swaps, Spot Markets
-- **Risk-Adjusted Returns**: 12-20% annualized yield
+- **Supported Assets**: BTC, ETH, SOL
+- **Strategy Coverage**: Futures, Options Markets
 - **Market Impact**: Top 5% of Bybit derivatives volume
 
 ## Technical Architecture
@@ -23,7 +22,7 @@ published: true
 Built entirely in **NestJS**, the system features a high-performance trading architecture:
 
 - **Real-time Market Data Processing**: WebSocket feeds from Bybit with under 50ms latency
-- **Multi-Asset Order Execution**: Simultaneous trading across futures, perpetuals, and spot
+- **Multi-Asset Order Execution**: Simultaneous trading across futures, and options
 - **Intelligent Order Routing**: Dynamic order placement based on liquidity and volatility
 - **Advanced Risk Management**: Real-time position monitoring and automated hedging
 - **Database Layer**: **Prisma ORM** with PostgreSQL for reliable data persistence
@@ -40,24 +39,12 @@ The system employs sophisticated quantitative techniques:
 - **Continuous Exposure**: Never leaves positions unhedged
 - **Dynamic Rebalancing**: Real-time position adjustment based on market movements
 
-### **Basis Trading**
-- **Spot-Futures Arbitrage**: Exploits price differentials between spot and futures
-- **Funding Rate Optimization**: Captures funding rate inefficiencies on perpetual contracts
-- **Calendar Spread Arbitrage**: Trades across different futures expiries
-
-### **Cross-Asset Strategies**
-- **Multi-Pair Trading**: Simultaneous positions across different cryptocurrency pairs
-- **Correlation Trading**: Exploits correlations between BTC, ETH, and altcoins
-- **Volatility Arbitrage**: Captures volatility differentials across assets
 
 ## Risk Management Features
 
 - **Real-time P&L Tracking**: Live profit/loss monitoring across all positions
-- **VaR Calculations**: Value at Risk analysis with 95% confidence intervals
 - **Position Limits**: Automated position sizing based on volatility and liquidity
 - **Stop-Loss Mechanisms**: Dynamic stop-loss triggers based on market conditions
-- **Correlation Monitoring**: Cross-asset correlation analysis for portfolio risk
-- **Funding Rate Management**: Automated funding rate optimization
 
 ## Market Impact
 
