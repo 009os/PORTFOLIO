@@ -1,0 +1,74 @@
+---
+title: "Order Parameters Matcher"
+description: "Enterprise-grade multi-exchange options price discovery and execution system that aggregates real-time data from Binance, Bybit, and DRBit exchanges. Features advanced Greeks analysis, implied volatility processing, and intelligent arbitrage detection with sub-100ms decision making for automated options trading across three major derivatives exchanges."
+date: "2025-05-01"
+published: true
+tags: ["options", "trading", "data-pipeline", "real-time", "multi-exchange", "greeks", "implied-volatility"]
+featured: true
+---
+
+# Order Parameters Matcher
+
+A sophisticated multi-exchange options price matching system that aggregates real-time data from Binance, Bybit, and DRBit to identify optimal trading opportunities through advanced deviation analysis and automated decision-making algorithms.
+
+## Project Overview
+
+It is a proprietary trading tool for my company, the Order Parameters Matcher serves as a comprehensive price discovery and execution system for options trading across multiple exchanges. The system continuously monitors price discrepancies, Greeks calculations, and implied volatility metrics to identify arbitrage opportunities and optimal entry points.
+
+## Core Architecture
+
+### Multi-Exchange Data Integration
+- **Binance Options**: Real-time price feeds, Greeks calculations, and IV data
+- **Bybit Options**: Live market data with millisecond precision
+- **DRBit Options**: Comprehensive options analytics and pricing models
+
+### Advanced Analytics Engine
+
+#### Greeks Analysis
+- **Delta**: Position sensitivity to underlying price changes
+- **Gamma**: Rate of change in delta
+- **Theta**: Time decay impact on option value
+- **Vega**: Sensitivity to implied volatility changes
+- **Rho**: Interest rate sensitivity
+
+## Decision Engine
+
+### Deviation Analysis
+The system continuously monitors deviations from calculated averages:
+- **Price Deviation**: Tracks price differences above/below VWAP thresholds
+- **Greeks Deviation**: Monitors Greeks variations for mispricing detection
+- **IV Deviation**: Identifies IV skew and arbitrage opportunities
+
+## Technical Implementation
+
+### Security Measures
+- **API Key Management**: Secure credential storage and rotation
+- **Rate Limiting**: Exchange API compliance and optimization
+
+## Business Impact
+
+### Operational Benefits
+- **24/7 Operation**: Continuous market monitoring and opportunity detection
+- **Scalability**: Handles multiple instruments and exchange pairs
+- **Integration**: Seamless connection with existing trading infrastructure
+
+## Key Achievements
+
+- **Real-Time Processing**: Sub-100ms data processing and decision making
+- **Multi-Exchange Coverage**: Unified interface for three major options exchanges
+- **Advanced Analytics**: Sophisticated Greeks and IV analysis capabilities
+- **Automated Execution**: Full automation of trading decision and execution
+- **Risk Management**: Comprehensive risk controls and position monitoring
+
+## Technology Stack
+
+- **Backend**: High-performance NestJS for low-latency processing
+- **Database**: Time-series databases for historical data storage
+- **APIs**: REST and WebSocket connections to exchange APIs
+
+
+This project represents a significant advancement in automated options trading technology, combining real-time data processing, advanced financial analytics, and intelligent decision-making to create a robust and profitable trading system.
+
+---
+
+**Note**: This was developed as part of a proprietary company project. While the full system remains private, selected backend modules have been made publicly available to showcase the architecture and implementation approach.

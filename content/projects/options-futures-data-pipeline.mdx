@@ -18,7 +18,7 @@ The pipeline operates as a distributed system with **microservices architecture*
 
 ### WebSocket Integration
 The system maintains persistent connections to **Binance** and **Bybit** WebSocket APIs, capturing:
-- **Real-time order book updates** (10ms precision)
+- **Real-time order book updates** (100ms precision)
 - **Trade execution data** with millisecond timestamps
 - **Funding rate information** for perpetual contracts
 - **Open interest and volume metrics**
@@ -28,7 +28,6 @@ The system maintains persistent connections to **Binance** and **Bybit** WebSock
 ## Storage & Analytics
 
 ### InfluxDB Time-Series Database
-- **High-frequency data storage** with nanosecond precision
 - **Optimized queries** for time-range analysis
 - **Continuous queries** for real-time aggregations
 
@@ -47,18 +46,10 @@ The system maintains persistent connections to **Binance** and **Bybit** WebSock
 - **Futures basis trading** and calendar spread strategies
 - **Cross-exchange arbitrage** execution systems
 
-### Risk Management
-- **Real-time position monitoring** across multiple exchanges
-- **VaR calculations** using high-frequency data
-- **Stress testing** with historical market scenarios
-- **Regulatory reporting** and compliance monitoring
-
 ## Technical Specifications
 
 ### Performance Metrics
 - **Data throughput**: 100,000+ messages/second
-- **Latency**: less than 1ms end-to-end processing
-- **Uptime**: 99.99% availability
 - **Storage**: 50TB+ historical data
 - **Retention**: 3+ years of market data
 
@@ -70,4 +61,8 @@ This data pipeline serves as the foundation for:
 - **Risk management systems** monitoring portfolio exposure
 - **Regulatory compliance** and reporting requirements
 
-The system processes over **1 billion market data points daily** across multiple cryptocurrency derivatives, providing the infrastructure for sophisticated quantitative analysis and algorithmic trading strategies in the rapidly evolving digital asset markets. 
+The system processes over **1 billion market data points daily** across multiple cryptocurrency derivatives, providing the infrastructure for sophisticated quantitative analysis and algorithmic trading strategies in the rapidly evolving digital asset markets.
+
+---
+
+**Note**: This was developed as part of a proprietary company project. While the full system remains private, selected backend modules have been made publicly available to showcase the architecture and implementation approach. 

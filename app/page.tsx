@@ -204,7 +204,7 @@ export default function Home() {
                 <h4 className="text-lg font-bold text-zinc-100">Binance Multi-Leg Options Hedge Fund</h4>
               </div>
               <p className="text-base text-zinc-300 mb-2">2-way delta-neutral options hedging system</p>
-              <p className="text-sm text-zinc-400 mb-2">1.5+ billion USDT monthly volume</p>
+              <p className="text-sm text-zinc-400 mb-2">1 billion USDT monthly volume</p>
               <p className="text-sm text-zinc-500">Featured Project</p>
             </div>
           </Link>

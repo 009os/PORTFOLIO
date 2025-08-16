@@ -26,6 +26,31 @@
       "static/chunks/main-app.js",
       "static/css/app/projects/[slug]/page.css",
       "static/chunks/app/projects/[slug]/page.js"
+    ],
+    "/contact/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/contact/page.js"
+    ],
+    "/education/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/education/page.js"
+    ],
+    "/writing/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/writing/page.js"
+    ],
+    "/introductions/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/introductions/page.js"
+    ],
+    "/work-experience/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/work-experience/page.js"
     ]
   }
 }

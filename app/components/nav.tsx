@@ -32,19 +32,19 @@ export const Navigation: React.FC = () => {
 	return (
 		<header ref={ref}>
 			<div
-				className={`fixed top-2 right-2 md:top-8 md:right-8 z-50 bg-zinc-900/80 backdrop-blur-xl rounded-lg md:rounded-xl p-1 md:p-3 border border-zinc-700/30 transition-all duration-500 ${
+				className={`fixed top-0 left-0 right-0 z-50 bg-zinc-900/80 backdrop-blur-xl border-b border-zinc-700/30 transition-all duration-500 ${
 					isIntersecting
 						? "opacity-100"
 						: "opacity-100"
 				}`}
 			>
-				<nav>
-					<ul className="flex items-center gap-1 md:gap-6 font-sans flex-wrap">
+				<nav className="max-w-7xl mx-auto px-6 py-4">
+					<ul className="flex items-center justify-center gap-1 md:gap-6 font-sans flex-wrap">
 						{pathname !== "/" && (
 							<li>
 								<Link
 									href="/"
-									className="text-xs md:text-lg font-bold duration-500 text-zinc-400 hover:text-zinc-100 hover:scale-105 transition-all transform hover:shadow-lg hover:shadow-zinc-500/20 px-1 md:px-4 py-1 md:py-2 rounded-md md:rounded-lg hover:bg-zinc-800/30 whitespace-nowrap"
+									className="text-sm md:text-base font-bold duration-500 text-zinc-400 hover:text-zinc-100 hover:scale-105 transition-all transform hover:shadow-lg hover:shadow-zinc-500/20 px-3 md:px-4 py-2 md:py-2 rounded-md md:rounded-lg hover:bg-zinc-800/30 whitespace-nowrap"
 								>
 									Home
 								</Link>
@@ -59,7 +59,7 @@ export const Navigation: React.FC = () => {
 							>
 								<Link
 									href="/introductions"
-									className="text-xs md:text-lg font-bold duration-500 text-zinc-400 hover:text-zinc-100 hover:scale-105 transition-all transform hover:shadow-lg hover:shadow-zinc-500/20 px-1 md:px-4 py-1 md:py-2 rounded-md md:rounded-lg hover:bg-zinc-800/30 whitespace-nowrap"
+									className="text-sm md:text-base font-bold duration-500 text-zinc-400 hover:text-zinc-100 hover:scale-105 transition-all transform hover:shadow-lg hover:shadow-zinc-500/20 px-3 md:px-4 py-2 md:py-2 rounded-md md:rounded-lg hover:bg-zinc-800/30 whitespace-nowrap"
 								>
 									About Me
 								</Link>
@@ -74,7 +74,7 @@ export const Navigation: React.FC = () => {
 							>
 								<Link
 									href="/work-experience"
-									className="text-xs md:text-lg font-bold duration-500 text-zinc-400 hover:text-zinc-100 hover:scale-105 transition-all transform hover:shadow-lg hover:shadow-zinc-500/20 px-1 md:px-4 py-1 md:py-2 rounded-md md:rounded-lg hover:bg-zinc-800/30 whitespace-nowrap"
+									className="text-sm md:text-base font-bold duration-500 text-zinc-400 hover:text-zinc-100 hover:scale-105 transition-all transform hover:shadow-lg hover:shadow-zinc-500/20 px-3 md:px-4 py-2 md:py-2 rounded-md md:rounded-lg hover:bg-zinc-800/30 whitespace-nowrap"
 								>
 									Experience
 								</Link>
@@ -89,7 +89,7 @@ export const Navigation: React.FC = () => {
 							>
 								<Link
 									href="/projects"
-									className="text-xs md:text-lg font-bold duration-500 text-zinc-400 hover:text-zinc-100 hover:scale-105 transition-all transform hover:shadow-lg hover:shadow-zinc-500/20 px-1 md:px-4 py-1 md:py-2 rounded-md md:rounded-lg hover:bg-zinc-800/30 whitespace-nowrap"
+									className="text-sm md:text-base font-bold duration-500 text-zinc-400 hover:text-zinc-100 hover:scale-105 transition-all transform hover:shadow-lg hover:shadow-zinc-500/20 px-3 md:px-4 py-2 md:py-2 rounded-md md:rounded-lg hover:bg-zinc-800/30 whitespace-nowrap"
 								>
 									Projects
 								</Link>
@@ -104,7 +104,7 @@ export const Navigation: React.FC = () => {
 							>
 								<Link
 									href="/education"
-									className="text-xs md:text-lg font-bold duration-500 text-zinc-400 hover:text-zinc-100 hover:scale-105 transition-all transform hover:shadow-lg hover:shadow-zinc-500/20 px-1 md:px-4 py-1 md:py-2 rounded-md md:rounded-lg hover:bg-zinc-800/30 whitespace-nowrap"
+									className="text-sm md:text-base font-bold duration-500 text-zinc-400 hover:text-zinc-100 hover:scale-105 transition-all transform hover:shadow-lg hover:shadow-zinc-500/20 px-3 md:px-4 py-2 md:py-2 rounded-md md:rounded-lg hover:bg-zinc-800/30 whitespace-nowrap"
 								>
 									Education
 								</Link>
@@ -119,7 +119,7 @@ export const Navigation: React.FC = () => {
 							>
 								<Link
 									href="/writing"
-									className="text-xs md:text-lg font-bold duration-500 text-zinc-400 hover:text-zinc-100 hover:scale-105 transition-all transform hover:shadow-lg hover:shadow-zinc-500/20 px-1 md:px-4 py-1 md:py-2 rounded-md md:rounded-lg hover:bg-zinc-800/30 whitespace-nowrap"
+									className="text-sm md:text-base font-bold duration-500 text-zinc-400 hover:text-zinc-100 hover:scale-105 transition-all transform hover:shadow-lg hover:shadow-zinc-500/20 px-3 md:px-4 py-2 md:py-2 rounded-md md:rounded-lg hover:bg-zinc-800/30 whitespace-nowrap"
 								>
 									Poetry
 								</Link>
@@ -129,7 +129,7 @@ export const Navigation: React.FC = () => {
 							<li>
 								<Link
 									href="/contact"
-									className="text-xs md:text-lg font-bold duration-500 text-zinc-400 hover:text-zinc-100 hover:scale-105 transition-all transform hover:shadow-lg hover:shadow-zinc-500/20 px-1 md:px-4 py-1 md:py-2 rounded-md md:rounded-lg hover:bg-zinc-800/30 whitespace-nowrap"
+									className="text-sm md:text-base font-bold duration-500 text-zinc-400 hover:text-zinc-100 hover:scale-105 transition-all transform hover:shadow-lg hover:shadow-zinc-500/20 px-3 md:px-4 py-2 md:py-2 rounded-md md:rounded-lg hover:bg-zinc-800/30 whitespace-nowrap"
 								>
 									Socials
 								</Link>
