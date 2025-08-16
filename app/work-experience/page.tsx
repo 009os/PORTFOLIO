@@ -13,7 +13,7 @@ export default function WorkExperience() {
 
       <div className="w-full max-w-4xl mx-auto px-8 py-16">
         {/* Header */}
-        <div className="text-center mb-16 mt-16">
+        <div className="text-center mb-16 mt-28">
           <h1 className="text-5xl font-bold text-zinc-100 mb-6 font-display">
             Work Experience
           </h1>

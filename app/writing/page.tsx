@@ -18,7 +18,7 @@ export default function Writing() {
 
 
 
-			<div className="w-full max-w-4xl mx-auto px-4 md:px-8 py-16 mt-20 md:mt-16">
+			<div className="w-full max-w-4xl mx-auto px-4 md:px-8 py-16 mt-28">
 				{/* Hero Section */}
 				<div className="text-center mb-8 md:mb-12 animate-fade-in">
 					<div className="flex justify-center mb-4 md:mb-6">

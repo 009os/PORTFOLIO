@@ -7,8 +7,8 @@ import projects__deltaNeutralHedgingMdx from './projects__delta-neutral-hedging.
 import projects__highstormMdx from './projects__highstorm.mdx.json' assert { type: 'json' }
 import projects__multiLegOptionsMdx from './projects__multi-leg-options.mdx.json' assert { type: 'json' }
 import projects__optionsFuturesDataPipelineMdx from './projects__options-futures-data-pipeline.mdx.json' assert { type: 'json' }
+import projects__orderParametersMatcherMdx from './projects__order-parameters-matcher.mdx.json' assert { type: 'json' }
 import projects__unkeyMdx from './projects__unkey.mdx.json' assert { type: 'json' }
 import projects__zodBirdMdx from './projects__zod-bird.mdx.json' assert { type: 'json' }
-import projects__orderParametersMatcherMdx from './projects__order-parameters-matcher.mdx.json' assert { type: 'json' }
 
-export const allProjects = [projects__bybitMultiLegTradingMdx, projects__crossExchangeOptionsHedgingMdx, projects__defxLiquiditySystemMdx, projects__deltaNeutralHedgingMdx, projects__highstormMdx, projects__multiLegOptionsMdx, projects__optionsFuturesDataPipelineMdx, projects__unkeyMdx, projects__zodBirdMdx, projects__orderParametersMatcherMdx]
+export const allProjects = [projects__bybitMultiLegTradingMdx, projects__crossExchangeOptionsHedgingMdx, projects__defxLiquiditySystemMdx, projects__deltaNeutralHedgingMdx, projects__highstormMdx, projects__multiLegOptionsMdx, projects__optionsFuturesDataPipelineMdx, projects__orderParametersMatcherMdx, projects__unkeyMdx, projects__zodBirdMdx]

@@ -7,7 +7,7 @@ export default function Education() {
 	return (
 		<div className="flex flex-col items-center justify-center w-screen min-h-screen bg-gradient-to-tl from-black via-zinc-600/20 to-black relative">
 			<Navigation />
-			<div className="w-full max-w-4xl mx-auto px-4 md:px-8 py-16 mt-16">
+			<div className="w-full max-w-4xl mx-auto px-4 md:px-8 py-16 mt-28">
 				<div className="text-center mb-8 md:mb-12">
 					<h1 className="text-2xl md:text-4xl font-bold tracking-tight text-zinc-100 mb-4 md:mb-6 font-display animate-fade-in">
 						Education

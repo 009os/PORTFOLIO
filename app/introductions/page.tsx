@@ -17,7 +17,7 @@ export default function Introductions() {
 				<div className="absolute bottom-20 right-10 w-1 h-1 bg-orange-400 rounded-full animate-pulse opacity-70"></div>
 			</div>
 
-			<div className="w-full max-w-6xl mx-auto px-4 md:px-8 py-16 mt-16">
+			<div className="w-full max-w-6xl mx-auto px-4 md:px-8 py-16 mt-28">
 				{/* Hero Section */}
 				<div className="text-center mb-12 animate-fade-in">
 					<div className="flex justify-center mb-8">
